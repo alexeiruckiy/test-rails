@@ -4,5 +4,6 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   def new
     render 'index'
+    a = 0
   end
 end
