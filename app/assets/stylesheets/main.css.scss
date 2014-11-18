@@ -1,0 +1,75 @@
+$info-width: 400px;
+& {
+  position: relative;
+}
+
+.front-wrapper {
+  padding: 20px 0 0;
+  text-align: center;
+}
+
+.presentation-wrapper {
+  float: left;
+}
+
+.presentation-controls {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.info-wrapper {
+  position: absolute;
+  left: 50%;
+  margin-left: -$info-width/2;
+  width: $info-width;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .35);
+  padding: 20px 5px 20px 35px;
+  &.edit {
+    left: 100%;
+    margin-left: -$info-width;
+    box-shadow: none;
+    input[name=create] {
+      visibility: hidden;
+    }
+  }
+
+  .form-group {
+    margin-bottom: 25px;
+  }
+  .error-message {
+    right: 15px;
+  }
+}
+
+.document-paper {
+  display: inline-block;
+  border: 1px solid;
+  border-color: #ddd;
+  border-radius: 4px 4px 0 0;
+}
+
+.presentation-pages {
+  float: left;
+  display: inline-block;
+  min-width: 140px;
+}
+
+#presentation-region {
+  width: 660px;
+}
+
+.pages-view {
+  position: relative;
+  margin: 0 auto;
+  max-width: 800px;
+
+  .page {
+    text-align: center;
+  }
+  .carousel-control {
+    background-image: none;
+    color: black;
+    width: auto;
+  }
+
+}

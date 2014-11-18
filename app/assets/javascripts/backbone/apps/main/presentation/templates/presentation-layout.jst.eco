@@ -1,0 +1,6 @@
+<div id="presentation-pages-region" class="presentation-pages"></div>
+<div class="presentation-wrapper">
+    <div id="presentation-controls-region" class="presentation-controls"></div>
+    <div id="presentation-region"></div>
+</div>
+<div id="presentation-info-region" class="info-wrapper <%= @view_state || ''%>"></div>

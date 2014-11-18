@@ -1,0 +1,37 @@
+#header-region {
+  @import "header.css.scss";
+}
+#main-region{
+  @import "main.css.scss";
+}
+#footer-region{
+  @import "footer.css.scss";
+}
+#popup-region{
+  @import "popup.css.scss";
+}
+html {
+  overflow-y: scroll;
+}
+body.modal-open{
+   padding-right: 0!important;
+}
+
+.page-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.form-group {
+  position: relative;
+  .error-message {
+    display: none;
+    white-space: nowrap;
+  }
+  &.has-error .error-message{
+    display: inline;
+    bottom: -32px;
+    right: 0;
+    position: absolute;
+  }
+}

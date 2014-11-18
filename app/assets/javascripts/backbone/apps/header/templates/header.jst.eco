@@ -1,0 +1,8 @@
+<header>
+    <div>
+        <h1 class="muted title">Expert system</h1>
+        <div id="navigation-region" class="navigation"></div>
+        <div id="login-region" class="login"></div>
+        <hr/>
+    </div>
+</header>

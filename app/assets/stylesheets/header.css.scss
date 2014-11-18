@@ -1,0 +1,22 @@
+.navigation {
+  display: inline-block;
+}
+
+.login {
+  display: inline-block;
+  float: right;
+  .login-form {
+    .login-block {
+      display: inline-block
+    }
+    .logon-block {
+      display: none;
+    }
+    &.logged .login-block {
+      display: none;
+    }
+    &.logged .logon-block {
+      display: inline-block;
+    }
+  }
+}

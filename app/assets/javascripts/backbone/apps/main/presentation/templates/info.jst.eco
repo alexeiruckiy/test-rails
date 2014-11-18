@@ -1,0 +1,36 @@
+<h2>Presentation info</h2>
+<div class="form-horizontal">
+    <div class="form-group js-form-block">
+        <label class="control-label col-sm-3" for="inputName">Name</label>
+
+        <div class="col-sm-9">
+            <input id="inputName" class="form-control js-form-control" placeholder="Name" name="name">
+            <span class="error-message help-block">Error</span>
+        </div>
+
+    </div>
+    <div class="form-group js-form-block">
+        <label class="control-label col-sm-3" for="inputDescription">Description</label>
+
+        <div class="col-sm-9">
+            <textarea id="inputDescription" class="form-control js-form-control" rows="5" name="description"
+                      placeholder="Description"></textarea>
+            <span class="error-message help-block">Error</span>
+        </div>
+
+    </div>
+    <div class="form-group js-form-block">
+        <label class="control-label col-sm-3" for="inputTags">Name</label>
+        <div class="col-sm-9">
+            <input id="inputTags" class="form-control" placeholder="Tags" name="tags">
+            <span class="error-message help-block">Error</span>
+        </div>
+
+    </div>
+
+    <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+            <input type="button" class="btn btn-default" name="create" value="Create new document">
+        </div>
+    </div>
+</div>

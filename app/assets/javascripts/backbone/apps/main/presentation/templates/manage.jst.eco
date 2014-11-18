@@ -1,0 +1,5 @@
+<div class="presentation-controls btn-group">
+    <button type="button" class="btn btn-success js-add">Add</button>
+    <button type="button" class="btn btn-alert js-remove">Remove</button>
+</div>
+<div class="pages"></div>

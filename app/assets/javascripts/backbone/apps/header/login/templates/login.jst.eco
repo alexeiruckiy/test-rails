@@ -1,0 +1,21 @@
+<div class="form-inline login-form" role="form">
+    <div class="login-block">
+        <div class="form-group js-form-block">
+            <label class="sr-only" for="usernameInput">Username</label>
+            <input type="text" class="form-control js-form-control" id="usernameInput" name="name" placeholder="Username">
+            <span class="error-message help-block"></span>
+        </div>
+        <div class="form-group js-form-block">
+            <label class="sr-only" for="passwordInput">Password</label>
+            <input type="password" class="form-control js-form-control" id="passwordInput" name="password" placeholder="Password">
+            <span class="error-message help-block"></span>
+        </div>
+        <button class="btn btn-primary sign-in-button">Sign in</button>
+        <button class="btn btn-success sign-up-button">Sign up</button>
+    </div>
+
+    <div class="logon-block">
+        <a href="/profile" class="profile-link"></a>
+        <button class="btn btn-default sign-out-button">Sign out</button>
+    </div>
+</div>

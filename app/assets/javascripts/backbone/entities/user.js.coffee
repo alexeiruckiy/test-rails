@@ -1,0 +1,96 @@
+@ExpertSystem.module 'Entities.User', (User, App, Backbone, Marionette, $, _) ->
+  class User.Model extends Backbone.Model
+    initialize: ->
+      @on 'error', (model, resp, options)->
+        @trigger 'entity:error', @, resp.responseJSON
+    defaults:
+      name: ''
+      email: ''
+      password: ''
+      password_confirmation: ''
+    urlRoot: ->
+      _.result(@collection, 'url') || _.result(User.Collection.prototype, 'url')
+
+    validate: (attrs, options)->
+      errors = []
+      validations = App.request 'validations'
+      for field of attrs
+        f_validations = validations.where
+                        field: field
+                        entity: 'user'
+        for f_validation in f_validations
+          regex = new RegExp f_validation.get('rule'), 'i'
+          unless regex.test attrs[field]
+            errors.push
+              field: field
+              msg: f_validation.get 'message'
+      if errors.length
+        @trigger 'entity:error', @, errors
+
+    login: ->
+      @sync 'create', @, {
+        url: '/login'
+        attrs:
+          name: @get('name')
+          password: @get('password')
+        success: (attrs, response, options)=>
+          @set 'id', attrs.id
+          @onSuccessLogin attrs
+          @.trigger 'user:successLogin', @
+        error: (options, response, statusText)=>
+          @.trigger 'entity:error', @, JSON.parse(options.responseText)
+      }
+
+    logout: ->
+      @sync 'delete', @,
+        url: '/logout'
+        complete: =>
+          @clear({silent:true}).set(@.defaults)
+          @onSuccessLogout()
+          @trigger 'user:successLogout'
+
+    onSuccessLogin: (attrs)->
+      sessionStorage.setItem 'api-token', attrs.token
+      sessionStorage.setItem 'user-id', attrs.id
+
+    onSuccessLogout: ->
+      sessionStorage.removeItem 'api-token'
+      sessionStorage.removeItem 'user-id'
+
+    isSignedIn: ->
+      return !@isNew() && sessionStorage.getItem 'user-id'
+
+
+  class User.Collection extends Backbone.Collection
+    url: '/users'
+    models: User.Model
+
+
+  App.reqres.setHandler 'viewer', ->
+    unless @viewer
+      @viewer = new User.Model
+        id: sessionStorage.getItem 'user-id'
+    @viewer
+
+  App.reqres.setHandler 'viewer:set', (user)->
+    viewer = App.request 'viewer'
+    viewer.clear().set(user.attributes)
+    viewer
+
+
+  App.reqres.setHandler 'users', ->
+    users = new User.Collection
+    users.fetch
+      reset: true
+    users
+
+  App.reqres.setHandler 'user', (id) ->
+    user = new User.Model
+      id: id
+    user.fetch()
+    user
+
+  App.reqres.setHandler 'user:new', ->
+    new User.Model()
+
+  User

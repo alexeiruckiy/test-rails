@@ -1,0 +1,9 @@
+<a class="left carousel-control js-left" href="javascript:void(0)">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+<a class="right carousel-control js-right" href="javascript:void(0)">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+</a>
+<div id="page-region" class="page"></div>
+<div id="page-indicator-region"></div>
+
