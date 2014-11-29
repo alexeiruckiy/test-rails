@@ -14,18 +14,17 @@
 
   App.on 'start', ->
     if Backbone.history
-      Backbone.history.start pushState: true
-    user = App.request 'viewer'
+      Backbone.history.start(pushState: true)
+    user = App.request('viewer')
     if user.isSignedIn()
       user.fetch()
-    validations = App.request 'validations'
+    validations = App.request('validations')
     validations.fetch()
 
   $(document).on 'click', "a[href^='/']", (event) ->
     event.preventDefault()
-    href = event.currentTarget.getAttribute 'href'
+    href = event.currentTarget.getAttribute('href')
     url = href.replace(/^\//, '').replace('\#\!\/', '')
-    Backbone.Router.prototype.navigate url,
-      trigger: true
+    Backbone.Router.prototype.navigate(url, trigger: true)
 
   App

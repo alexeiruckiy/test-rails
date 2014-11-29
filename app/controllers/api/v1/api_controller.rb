@@ -1,10 +1,10 @@
-class ApiController < ActionController::API
+class Api::V1::ApiController < ActionController::API
   include ActionController::HttpAuthentication::Token::ControllerMethods
   include ActionController::Cookies
   include ActionController::MimeResponds
 
-  rescue_from ActiveRecord::RecordInvalid, :with => :record_invalid
-  rescue_from ActiveRecord::RecordNotFound, :with => :record_not_found
+  rescue_from ActiveRecord::RecordInvalid, with: :record_invalid
+  rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
 
   protected
   def record_invalid (e)
@@ -17,7 +17,7 @@ class ApiController < ActionController::API
     render json: json, status: 403
   end
 
-  def record_not_found (e)
+  def record_not_found
      render json: {
         msg: 'Record not found'
      }, status: 404
@@ -27,10 +27,9 @@ class ApiController < ActionController::API
   private
   def restrict_access
     unless restrict_access_by_params || restrict_access_by_header
-      render json: {
+      return render json: {
           msg: 'Invalid API Token'
       }, status: 401
-      return
     end
 
     @current_user = @api_key.user if @api_key

@@ -6,13 +6,11 @@
       'sign-up': 'signUp'
 
   App.addInitializer ->
-    new HeaderApp.Router
-      controller: getController()
+    new HeaderApp.Router controller: getController()
 
   getController = ()->
     unless HeaderApp.controller
-      HeaderApp.controller = new HeaderApp.Controller
-                      region: App.headerRegion
+      HeaderApp.controller = new HeaderApp.Controller region: App.headerRegion
     HeaderApp.controller
 
   HeaderApp.on 'start', ->

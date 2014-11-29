@@ -27,11 +27,19 @@
       if errors.length
         @trigger 'entity:error', @, errors
 
+    save: (key, val, options)->
+#      if @isNew()
+#        if key == null || typeof key == 'object'
+#          options = val
+#          attrs = options.attrs || {}
+#          options.attrs = _.extend({}, {user: @toJSON()}, attrs)
+      super
+
     login: ->
       @sync 'create', @, {
-        url: '/login'
+        url: '/users/sign_in'
         attrs:
-          name: @get('name')
+          email: @get('name')
           password: @get('password')
         success: (attrs, response, options)=>
           @set 'id', attrs.id
@@ -43,22 +51,22 @@
 
     logout: ->
       @sync 'delete', @,
-        url: '/logout'
+        url: '/users/sign_out'
         complete: =>
           @clear({silent:true}).set(@.defaults)
           @onSuccessLogout()
           @trigger 'user:successLogout'
 
     onSuccessLogin: (attrs)->
-      sessionStorage.setItem 'api-token', attrs.token
-      sessionStorage.setItem 'user-id', attrs.id
+      $.cookie 'api_token', attrs.token
+      $.cookie 'user_id', attrs.id
 
     onSuccessLogout: ->
-      sessionStorage.removeItem 'api-token'
-      sessionStorage.removeItem 'user-id'
+      $.removeCookie 'api_token'
+      $.removeCookie 'user_id'
 
     isSignedIn: ->
-      return !@isNew() && sessionStorage.getItem 'user-id'
+      return !@isNew() && $.cookie 'user_id'
 
 
   class User.Collection extends Backbone.Collection
@@ -69,7 +77,7 @@
   App.reqres.setHandler 'viewer', ->
     unless @viewer
       @viewer = new User.Model
-        id: sessionStorage.getItem 'user-id'
+        id: $.cookie 'user_id'
     @viewer
 
   App.reqres.setHandler 'viewer:set', (user)->

@@ -44,3 +44,10 @@ gem 'bootstrap-sass', '~> 3.1.1'
 
 gem 'rails-api'
 
+gem 'devise'
+
+gem 'jquery-cookie-rails'
+
+gem 'letter_opener', :group => :development
+gem 'letter_opener_web', '~> 1.2.0', :group => :development
+

@@ -5,6 +5,6 @@ class CreateEntities < ActiveRecord::Migration
 
       t.timestamps
     end
-    add_reference :users, :entity, index: true
+    add_reference :devise, :entity, index: true
   end
 end

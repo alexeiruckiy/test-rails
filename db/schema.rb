@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140617175459) do
+ActiveRecord::Schema.define(version: 20141119173326) do
 
   create_table "api_keys", force: true do |t|
     t.string   "token"
@@ -52,10 +52,15 @@ ActiveRecord::Schema.define(version: 20140617175459) do
   create_table "users", force: true do |t|
     t.string   "name"
     t.string   "email"
-    t.string   "password_digest"
+    t.string   "encrypted_password",     default: "", null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "entity_id"
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.string   "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
   end
 
   add_index "users", ["entity_id"], name: "index_users_on_entity_id"

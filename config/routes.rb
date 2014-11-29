@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   root to: 'application#new'
+
   namespace :api do
     namespace :v1 do
-      resources :users
+
+      devise_for :users, format: false
+      resources :users, except: [:create, :delete], format: false
 
       resources :documents do
         get 'pages', to: 'pages#index'
@@ -17,6 +20,11 @@ Rails.application.routes.draw do
       get '/validations', to: 'validations#index'
     end
   end
+
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  end
+
   match '*path' => 'application#new', via: :get
 
   # The priority is based upon order of creation: first created -> highest priority.
