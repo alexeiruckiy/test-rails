@@ -39,7 +39,7 @@
       @sync 'create', @, {
         url: '/users/sign_in'
         attrs:
-          email: @get('name')
+          name: @get('name')
           password: @get('password')
         success: (attrs, response, options)=>
           @set 'id', attrs.id

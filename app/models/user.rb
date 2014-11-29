@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
 
   devise :database_authenticatable, :registerable, :confirmable
 
+  #default_scope  ->{ includes(:api_key).references(:api_key) }
   before_validation do
     self.entity ||= Entity.find_by_name 'user'
   end

@@ -10,9 +10,12 @@ class Api::V1::ConfirmationsController < Devise::ConfirmationsController
   # end
 
   # GET /resource/confirmation?confirmation_token=abcdef
-  #def show
-  #   super
-  #end
+  def show
+    super do |user|
+      sign_in(:user, user)
+      setup_user_params_in_session(user)
+    end
+  end
 
   # protected
 

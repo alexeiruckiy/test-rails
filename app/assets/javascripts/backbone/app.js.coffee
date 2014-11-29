@@ -13,6 +13,7 @@
     App.module('PopupApp').start()
 
   App.on 'start', ->
+    @X_CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content')
     if Backbone.history
       Backbone.history.start(pushState: true)
     user = App.request('viewer')

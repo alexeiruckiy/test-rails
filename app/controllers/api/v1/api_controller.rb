@@ -46,7 +46,7 @@ class Api::V1::ApiController < ActionController::API
   def restrict_access_by_params
     return true if @api_key
 
-    @api_key = ApiKey.find_by_token(request.env['HTTP_TOKEN'])
+    @api_key = ApiKey.find_by_token request.env['HTTP_TOKEN']
   end
 
   def current_user
