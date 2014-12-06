@@ -14,11 +14,10 @@ class Api::V1::RegistrationsController < Devise::RegistrationsController
     if resource.save
       if resource.active_for_authentication?
         sign_up(resource_name, resource)
-        render nothing: true
       else
         expire_session_data_after_sign_in!
-        render nothing: true
       end
+      render  json: {}, status: 200
     else
       clean_up_passwords resource
       render :status => 401, :json => {:errors => resource.errors}

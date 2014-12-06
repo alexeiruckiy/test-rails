@@ -3,7 +3,7 @@ class CreateDocuments < ActiveRecord::Migration
     create_table :documents do |t|
       t.string :name
       t.string :description
-      t.belongs_to :user, index: true
+      t.references :user, index: true
       t.integer :pages_count
       t.timestamps
     end

@@ -11,4 +11,4 @@ Validation.create field: 'email', rule: '^[\w\.+-]+@([\w]+\.)+[a-zA-Z]+$', messa
 Validation.create field: 'email', rule: '\S+', message: 'can\'t be blank', entity: user_entity
 Validation.create field: 'name', rule: '\S+', message: 'can\'t be blank', entity: user_entity
 
-User.create name: 'admin', email: 'admin@admin.ru', password: 'admin', password_confirmation: 'admin'
+User.create name: 'admin', email: 'admin@admin.ru', password: 'admin', password_confirmation: 'admin', confirmed_at: DateTime.now

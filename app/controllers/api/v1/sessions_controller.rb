@@ -10,7 +10,7 @@ class Api::V1::SessionsController < Devise::SessionsController
 # POST /resource/sign_in
   def create
     user = User.find_for_database_authentication(name: params[:name])
-    unless user
+    unless user && user.confirmed?
       return render json: [
           {
               msg: 'Name no found',

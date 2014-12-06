@@ -7,7 +7,6 @@
         @signUp()
 
     signUp: ()->
-      new PopupApp.SignUp.Controller
-        region: @region
+      new PopupApp.SignUp.Controller(region: @region)
 
   PopupApp

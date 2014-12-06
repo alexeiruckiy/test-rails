@@ -3,7 +3,7 @@ class CreatePages < ActiveRecord::Migration
     create_table :pages do |t|
       t.integer :number
       t.string :content
-      t.belongs_to :document, index: true
+      t.references :document, index: true
       t.timestamps
     end
   end

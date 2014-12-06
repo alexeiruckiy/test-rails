@@ -1,4 +1,5 @@
-source 'https://rubygems.org'
+#source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -47,6 +48,8 @@ gem 'rails-api'
 gem 'devise'
 
 gem 'jquery-cookie-rails'
+
+gem 'cancancan', '~> 1.9.2'
 
 gem 'letter_opener', :group => :development
 gem 'letter_opener_web', '~> 1.2.0', :group => :development

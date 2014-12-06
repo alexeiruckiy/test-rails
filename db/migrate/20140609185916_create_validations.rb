@@ -4,7 +4,7 @@ class CreateValidations < ActiveRecord::Migration
       t.string :field
       t.string :rule
       t.string :message
-      t.belongs_to :entity, index: true
+      t.references :entity, index: true
       t.timestamps
     end
   end
