@@ -58,11 +58,9 @@
           @trigger 'user:successLogout'
 
     onSuccessLogin: (attrs)->
-      $.cookie 'api_token', attrs.token
       $.cookie 'user_id', attrs.id
 
     onSuccessLogout: ->
-      $.removeCookie 'api_token'
       $.removeCookie 'user_id'
 
     isSignedIn: ->

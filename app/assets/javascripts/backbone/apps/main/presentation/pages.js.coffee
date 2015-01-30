@@ -1,4 +1,5 @@
 @ExpertSystem.module 'MainApp.Presentation', (Presentation, App, Backbone, Marionette, $, _) ->
+
   class Presentation.PagesController extends App.Controllers.Base
     initialize: (options)->
       @document = options.document
@@ -14,19 +15,21 @@
       page = @document.pages.at index
       unless @currentPage == page
         @currentPage = page
-#        @showIndicator()
         page.fetch success: =>
           @showPage()
-#          @hideIndicator()
 
     showPage: ->
-      @pagesView.pageRegion.show new Presentation.CanvasView(model: @currentPage)
+      canvasView = new Presentation.CanvasView(model: @currentPage)
+      @listenTo canvasView, 'canvas:change', @savePage
+      @pagesView.pageRegion.show(canvasView)
 
-    showIndicator: ->
-      @pagesView.indicatorRegion.show new App.Views.IndicatorView()
-
-    hideIndicator: ->
-      @pagesView.indicatorRegion.empty()
+    savePage: (page, content = null)->
+      page.set({content: content}, {silent: true}) if content
+      if App.request('viewer').isSignedIn()
+        clearTimeout(@_pageTimeout) if @_pageTimeout
+        @_pageTimeout = setTimeout =>
+          page.savePage()
+        ,1500
 
   class Presentation.PagesView extends Marionette.LayoutView
     className: 'pages-view'

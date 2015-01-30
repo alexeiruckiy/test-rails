@@ -1,4 +1,4 @@
-class Api::V1::SessionsController < Devise::SessionsController
+class SessionsController < Devise::SessionsController
   skip_before_filter :verify_signed_out_user, only: :destroy
 # before_filter :configure_sign_in_params, only: [:create]
 
@@ -20,7 +20,6 @@ class Api::V1::SessionsController < Devise::SessionsController
     end
     if user.valid_password?(params[:password])
       sign_in(:user, user)
-      setup_user_params_in_session(user)
       render json: {
           id: user.id,
           token: user.api_key.token

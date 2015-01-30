@@ -1,25 +1,24 @@
 Rails.application.routes.draw do
   root to: 'application#new'
 
-  namespace :api do
-    namespace :v1 do
+  devise_for :users, :skip => [:sessions], format: false
 
-      devise_for :users, format: false
-      resources :users, except: [:create, :delete], format: false
-
-      resources :documents do
-        get 'pages', to: 'pages#index'
-        post 'pages', to: 'pages#create'
-        get 'pages/:id', to: 'pages#show'
-        put 'pages/:id', to: 'pages#update'
-      end
-
-      post '/login', to: 'sessions#create'
-      delete '/logout', to: 'sessions#destroy'
-
-      get '/validations', to: 'validations#index'
-    end
+  as :user do
+    post '/users/sign_in' => 'sessions#create', :as => :user_session
+    delete '/users/sign_out' => 'sessions#destroy', :as => :destroy_user_session
   end
+
+  resources :users, except: [:create, :delete], format: false
+
+  resources :documents do
+    resources :pages, shallow: true
+    #get 'pages', to: 'pages#index'
+    #post 'pages', to: 'pages#create'
+    #get 'pages/:id', to: 'pages#show'
+    #put 'pages/:id', to: 'pages#update'
+  end
+
+  get '/validations', to: 'validations#index'
 
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener"

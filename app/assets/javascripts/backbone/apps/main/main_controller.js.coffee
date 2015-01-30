@@ -20,7 +20,7 @@
         document: App.request 'document', id
 
     editPresentation: (id)->
-      layoutView = @getLayoutView state: 'edit'
+      layoutView = @getLayoutView(state: 'edit')
       layoutView.once 'render', ->
         new MainApp.Presentation.EditController
           document: App.request 'document', parseInt(id)

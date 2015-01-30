@@ -5,10 +5,16 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-user_entity = Entity.create name: 'user'
+user_entity = Entity.create(name: 'user')
 
-Validation.create field: 'email', rule: '^[\w\.+-]+@([\w]+\.)+[a-zA-Z]+$', message: 'invalid', entity: user_entity
-Validation.create field: 'email', rule: '\S+', message: 'can\'t be blank', entity: user_entity
-Validation.create field: 'name', rule: '\S+', message: 'can\'t be blank', entity: user_entity
+Validation.create(field: 'email', rule: '^[\w\.+-]+@([\w]+\.)+[a-zA-Z]+$', message: 'invalid', entity: user_entity)
+Validation.create(field: 'email', rule: '\S+', message: 'can\'t be blank', entity: user_entity)
+Validation.create(field: 'name', rule: '\S+', message: 'can\'t be blank', entity: user_entity)
 
-User.create name: 'admin', email: 'admin@admin.ru', password: 'admin', password_confirmation: 'admin', confirmed_at: DateTime.now
+admin_role = Role.create(name: 'admin')
+user_role = Role.create(name: 'user')
+
+admin = User.create(name: 'admin', email: 'admin@admin.ru', password: 'admin', password_confirmation: 'admin', confirmed_at: DateTime.now)
+
+admin.roles << [admin_role, user_role]
+

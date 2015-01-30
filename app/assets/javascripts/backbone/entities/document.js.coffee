@@ -6,18 +6,29 @@
     urlRoot: ->
       _.result(@collection, 'url') || _.result(Document.Collection.prototype, 'url')
     initialize: (options={})->
-      @pages = options.pages || new Document.Pages([], document: this)
+      @pages = options.pages || new Document.Pages([], document: @)
 
 
     addNewPage: (attrs={})->
-      page = new Document.Page attrs
-      @pages.add page
+      attrs.document_id = @id
+      page = new Document.Page(attrs)
+      @pages.add(page)
+      page
+
+    saveNewPage: (attrs={})->
+      page = @addNewPage(attrs)
+      url = _.result(@, 'url') + _.result(page, 'url')
+      page.save({}, url: url)
       page
 
     fetchDocument: (onSuccess=->)->
-      @fetch success:=>
-        @pages.fetch reset: true, success: onSuccess
+      @fetch(silent: true, success:=>
+        @fetchPages(onSuccess)
+      )
 
+    fetchPages: (onSuccess=->)->
+      url = _.result(@, 'url') + @pages.url
+      @pages.fetch(url: url, reset: true, silent: true, success: onSuccess)
 
     saveDocument: (attrs={}, options={})->
       pages = @pages
@@ -41,15 +52,12 @@
 
     savePage: ->
       unless @collection.document.isNew()
-        if @isNew()
-          @save.apply @, arguments
-        else if @hasChanged()
-          @save.apply @, arguments
+        @set({document_id: @collection.document.id}, {silent:true})
+        @save.apply @, arguments
 
   class Document.Pages extends Backbone.Collection
     model: Document.Page
-    url: ->
-      _.result(@document, 'url') + '/pages'
+    url: '/pages'
     initialize: (models, options={})->
       @document = options.document
 

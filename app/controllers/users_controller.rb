@@ -1,4 +1,4 @@
-class Api::V1::UsersController < Api::V1::ApiController
+class UsersController < ApplicationController
   #before_action :restrict_access, only: [:show]
 
   def show

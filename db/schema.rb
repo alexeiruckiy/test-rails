@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141119173326) do
+ActiveRecord::Schema.define(version: 20141206153716) do
 
   create_table "api_keys", force: true do |t|
     t.string   "token"
@@ -48,6 +48,19 @@ ActiveRecord::Schema.define(version: 20141119173326) do
   end
 
   add_index "pages", ["document_id"], name: "index_pages_on_document_id"
+
+  create_table "roles", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "roles_users", id: false, force: true do |t|
+    t.integer "role_id", null: false
+    t.integer "user_id", null: false
+  end
+
+  add_index "roles_users", ["role_id", "user_id"], name: "index_roles_users_on_role_id_and_user_id"
 
   create_table "users", force: true do |t|
     t.string   "name"

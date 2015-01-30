@@ -43,8 +43,6 @@ gem 'eco'
 
 gem 'bootstrap-sass', '~> 3.1.1'
 
-gem 'rails-api'
-
 gem 'devise'
 
 gem 'jquery-cookie-rails'

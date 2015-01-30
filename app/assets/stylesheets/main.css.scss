@@ -1,4 +1,4 @@
-$info-width: 400px;
+$info-width: 450px;
 & {
   position: relative;
 }
@@ -13,8 +13,10 @@ $info-width: 400px;
 }
 
 .presentation-controls {
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding: 10px 0;
+}
+#presentation-controls-region{
+  margin: 0 0 0 70px;
 }
 
 .info-wrapper {
@@ -23,7 +25,7 @@ $info-width: 400px;
   margin-left: -$info-width/2;
   width: $info-width;
   box-shadow: 0 1px 3px rgba(0, 0, 0, .35);
-  padding: 20px 5px 20px 35px;
+  padding: 20px 35px 20px 35px;
   &.edit {
     left: 100%;
     margin-left: -$info-width;

@@ -3,11 +3,6 @@
   class Presentation.CanvasView extends Marionette.ItemView
     className: 'document-paper'
 
-    initialize: ->
-      presentationView = Marionette.getOption @, 'presentationView'
-      if presentationView
-        @listenTo presentationView, 'presentation:primitive:select', @onPresenstationPrimitiveSelect
-
     events:
       'click' : 'onPaperClick'
 
@@ -16,18 +11,17 @@
         @paper.fromJSON @model.get 'content'
 
     onRender: ->
-      @paper = Raphael(@el, 600,400)
+      @paper = Raphael(@el, 520,390)
       @paper.fromJSON @model.get 'content'
-
-    onPresenstationPrimitiveSelect: (primitive_name)->
-      @activePrimitive = primitive_name
 
     onPaperClick: (event)->
       $target = $(event.currentTarget)
       offsetX = event.offsetX || event.clientX - $target.offset().left
       offsetY = event.offsetY || event.clientY - $target.offset().top
 
-      switch @activePrimitive
+      activePrimitive = App.request('presentationView:primitive')
+
+      switch activePrimitive
         when 'text'
           @paper.text offsetX, offsetY, 'qwerty'
         when 'figure'

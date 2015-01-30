@@ -3,27 +3,39 @@ class User < ActiveRecord::Base
   belongs_to :entity
   has_many :documents
   has_many :pages, through: :documents
+  has_and_belongs_to_many :roles
 
   devise :database_authenticatable, :registerable, :confirmable
 
   #default_scope  ->{ includes(:api_key).references(:api_key) }
-  before_validation do
-    self.entity ||= Entity.find_by_name 'user'
-  end
-
-  #has_secure_password
+  after_initialize :init_entity
   after_create :create_api_key
 
   validates :name, presence: true, uniqueness: true
   validates :email, presence: true, uniqueness: true
   validates_with FieldValidator
 
+
   def validations
-    Validation.joins(:entity).where(devise: {id: id})
+    Validation.joins(:entity).where(users: {id: id})
+  end
+
+  DEFAULT_ROLE = 'guest'
+  def is?(search_name)
+    if new_record?
+      search_name == DEFAULT_ROLE
+    else
+      search_role = roles.find { |role| role.name == search_name.to_s }
+      !search_role.nil?
+    end
   end
 
   private
   def create_api_key
-    ApiKey.create :user => self
+    ApiKey.create(user: self)
+  end
+
+  def init_entity
+    self.entity ||= Entity.find_by_name('user')
   end
 end

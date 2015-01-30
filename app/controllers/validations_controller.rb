@@ -1,4 +1,4 @@
-class Api::V1::ValidationsController < Api::V1::ApiController
+class ValidationsController < ApplicationController
   def index
     json = Jbuilder.encode do |json|
       json.array! Validation.joins(:entity) do |validation|
