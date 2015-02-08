@@ -1,6 +1,8 @@
-<div id="presentation-pages-region" class="presentation-pages"></div>
-<div class="presentation-wrapper">
-    <div id="presentation-controls-region" class="presentation-controls"></div>
-    <div id="presentation-region"></div>
+<div id="pages-manage-region" class="pages-manage-wrapper"></div>
+<div class="info-wrapper">
+    <div class="info-content">
+        <h2 data-field="name"></h2>
+        <p data-field="description"></p>
+        <%- @printEditLink()%>
+    </div>
 </div>
-<div id="presentation-info-region" class="info-wrapper <%= @view_state || ''%>"></div>

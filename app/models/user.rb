@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   has_many :pages, through: :documents
   has_and_belongs_to_many :roles
 
-  devise :database_authenticatable, :registerable, :confirmable
+  devise :database_authenticatable, :registerable, :confirmable, :timeoutable, :timeout_in => 30.minutes
 
   #default_scope  ->{ includes(:api_key).references(:api_key) }
   after_initialize :init_entity

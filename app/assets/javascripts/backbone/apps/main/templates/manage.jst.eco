@@ -1,0 +1,6 @@
+<div id="pages-list-region" class="pages-list-wrapper"></div>
+<div class="pages-wrapper">
+    <div id="panel-region" class="panel-wrapper"></div>
+    <div id="pages-region"></div>
+</div>
+

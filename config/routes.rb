@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
   root to: 'application#new'
 
-  devise_for :users, :skip => [:sessions], format: false
+  devise_for :users, :controllers=> { registrations: 'registrations' }, :skip => [:sessions, :confirmations], :format=> false
 
   as :user do
-    post '/users/sign_in' => 'sessions#create', :as => :user_session
-    delete '/users/sign_out' => 'sessions#destroy', :as => :destroy_user_session
+    get '/users/confirmation' => 'confirmations#show', :as => :user_confirmation, :format => false
+    post '/users/sign_in' => 'sessions#create', :as => :user_session, :format => false
+    delete '/users/sign_out' => 'sessions#destroy', :as => :destroy_user_session, :format => false
   end
 
   resources :users, except: [:create, :delete], format: false

@@ -20,6 +20,7 @@ class SessionsController < Devise::SessionsController
     end
     if user.valid_password?(params[:password])
       sign_in(:user, user)
+      cookies[:user_id] = user.id
       render json: {
           id: user.id,
           token: user.api_key.token
@@ -38,6 +39,7 @@ class SessionsController < Devise::SessionsController
   #DELETE /resource/sign_out
   def destroy
     sign_out(:user)
+    cookies.delete('user_id')
     render nothing: true
   end
 

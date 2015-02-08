@@ -7,42 +7,6 @@ $info-width: 450px;
   padding: 20px 0 0;
   text-align: center;
 }
-
-.presentation-wrapper {
-  float: left;
-}
-
-.presentation-controls {
-  padding: 10px 0;
-}
-#presentation-controls-region{
-  margin: 0 0 0 70px;
-}
-
-.info-wrapper {
-  position: absolute;
-  left: 50%;
-  margin-left: -$info-width/2;
-  width: $info-width;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, .35);
-  padding: 20px 35px 20px 35px;
-  &.edit {
-    left: 100%;
-    margin-left: -$info-width;
-    box-shadow: none;
-    input[name=create] {
-      visibility: hidden;
-    }
-  }
-
-  .form-group {
-    margin-bottom: 25px;
-  }
-  .error-message {
-    right: 15px;
-  }
-}
-
 .document-paper {
   display: inline-block;
   border: 1px solid;
@@ -50,28 +14,118 @@ $info-width: 450px;
   border-radius: 4px 4px 0 0;
 }
 
-.presentation-pages {
-  float: left;
-  display: inline-block;
-  min-width: 140px;
-}
-
 #presentation-region {
   width: 660px;
+}
+
+
+
+
+
+
+//================================ Новые стили ====================================
+@mixin bordered-region ($radius){
+  border-radius: $radius;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .35);
+}
+@mixin form($width){
+  margin: 0 auto;
+  padding: 15px 30px;
+  width: $width;
+  @include bordered-region(10px);
+}
+
+.new-presentation-view {
+  @include form(650px);
+  textarea {
+    height: 200px;
+  }
+}
+
+.presentation-view{
+  display: table;
+  width: 100%;
+
+  .pages-manage-wrapper{
+    display: table-cell;
+    width: 65%;
+    padding-right: 15px;
+  }
+
+  .info-wrapper {
+    display: table-cell;
+    position: relative;
+    width: 35%;
+    .info-content{
+      position: absolute;
+      left: 0;
+      right: 0;
+      padding: 20px 35px 20px 35px;
+      @include bordered-region(5px);
+    }
+  }
 }
 
 .pages-view {
   position: relative;
   margin: 0 auto;
-  max-width: 800px;
+  width: 635px;
 
   .page {
     text-align: center;
   }
   .carousel-control {
     background-image: none;
-    color: black;
+    color: #000;
     width: auto;
   }
-
 }
+
+
+.edit-presentation-view{
+  display: table;
+  width: 100%;
+  .pages-manage-wrapper{
+    display: table-cell;
+    width: 65%;
+    vertical-align: top;
+    padding-right: 15px;
+  }
+  .info-wrapper{
+    display: table-cell;
+    width: 35%;
+
+    .info-view{
+      padding: 20px 35px 20px 35px;
+      @include bordered-region(5px);
+    }
+  }
+}
+
+.pages-manage-view{
+  padding: 20px 25px;
+  @include bordered-region(5px);
+  .pages-list-wrapper{
+    display: inline-block;
+    vertical-align: top;
+  }
+  .pages-wrapper {
+    display: inline-block;
+  }
+  .panel-wrapper {
+    margin-bottom: 15px;
+  }
+}
+
+.sign-up-view{
+  @include form(500px);
+  .form-group{
+    margin-bottom: 25px;
+    &.has-error .error-message{
+      right: 15px;
+    }
+  }
+}
+
+
+
