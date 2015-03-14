@@ -2,10 +2,8 @@
   App = new Marionette.Application
   App.Behaviors = {}
 
-  App.addRegions
-    headerRegion: '#header-region'
-    mainRegion: '#main-region'
-    footerRegion: '#footer-region'
+  App.on 'before:start', ->
+    @rootView = new App.Views.RootView()
 
   App.on 'start', ->
     @X_CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content')
@@ -15,7 +13,7 @@
     validations = App.request('validations')
     validations.fetch()
 
-  $(document).on 'click', "a[href^='/']", (event) ->
+  $(document).on 'click', 'a[href^="/"]', (event) ->
     event.preventDefault()
     href = event.currentTarget.getAttribute('href')
     url = href.replace(/^\//, '').replace('\#\!\/', '')

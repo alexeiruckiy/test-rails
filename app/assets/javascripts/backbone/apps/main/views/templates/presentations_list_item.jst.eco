@@ -1,0 +1,4 @@
+<th scope="row"><%= @id%></th>
+<td><a href="/presentations/<%= @id%>"><%= @name%></a></td>
+<td><%= @pages_count%></td>
+<td><%= @created_at%></td>

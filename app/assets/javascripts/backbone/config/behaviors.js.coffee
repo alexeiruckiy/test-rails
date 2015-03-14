@@ -1,3 +1,2 @@
 do (Marionette)->
-  Marionette.Behaviors.behaviorsLookup = ->
-    ExpertSystem.Behaviors
+  Marionette.Behaviors.behaviorsLookup = -> ExpertSystem.Behaviors

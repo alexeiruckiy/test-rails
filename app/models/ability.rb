@@ -31,20 +31,17 @@ class Ability
 
     user ||= User.new
 
-    can :show, Document
+    can [:index, :show, :count], Document
+    can [:index, :show], Page
 
-    if user.is?('guest')
-
-    else
+    unless user.is?('guest')
+      can :read, User, id: user.id
       can :create, Document
-
-
-      can :manage, Page, document: {
-          user_id: user.id
-      }
       can [:update, :destroy], Document, user_id: user.id
+      can :create, Page
+      can [:update, :destroy], Page, user: {
+          id: user.id
+      }
     end
-
-
   end
 end

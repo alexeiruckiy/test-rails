@@ -1,18 +1,9 @@
 class UsersController < ApplicationController
   #before_action :restrict_access, only: [:show]
+  load_and_authorize_resource
 
   def show
-    user = User.find params[:id]
-    render json: {
-        id: user.id,
-        name: user.name,
-        email: user.email
-    }
-  end
-
-  private
-  def user_params
-    params.permit(:name, :email, :password, :password_confirmation)
+    render json: @user, only: [:id, :name, :email]
   end
 
 end

@@ -1,0 +1,2 @@
+<%- @printButtons()%>
+<div class="pages"></div>

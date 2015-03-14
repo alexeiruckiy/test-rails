@@ -1,0 +1,8 @@
+<div class="login-block">
+    <button class="btn btn-primary js-login-link">Sign in</button>
+    <a href="/sign-up" class="btn btn-success js-sign-up">Sign up</a>
+</div>
+<div class="logon-block">
+    <a href="/profile" class="profile-link"></a>
+    <button class="btn btn-default js-sign-out">Sign out</button>
+</div>

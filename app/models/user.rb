@@ -20,14 +20,14 @@ class User < ActiveRecord::Base
     Validation.joins(:entity).where(users: {id: id})
   end
 
-  DEFAULT_ROLE = 'guest'
+
   def is?(search_name)
     if new_record?
-      search_name == DEFAULT_ROLE
+      role_names = [ Role::DEFAULT_ROLE ]
     else
-      search_role = roles.find { |role| role.name == search_name.to_s }
-      !search_role.nil?
+      role_names = roles.collect(&:name)
     end
+    role_names.include?(search_name)
   end
 
   private

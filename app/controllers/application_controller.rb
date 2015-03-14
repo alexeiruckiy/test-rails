@@ -6,7 +6,11 @@ class ApplicationController < ActionController::Base
   rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
   #include Devise::Controllers::Helpers::ClassMethods
   def new
-    cookies[:user_id] = current_user.id if current_user
+    if current_user
+      cookies[:user_id] = current_user.id
+    else
+      cookies.delete('user_id')
+    end
     render 'index'
   end
 

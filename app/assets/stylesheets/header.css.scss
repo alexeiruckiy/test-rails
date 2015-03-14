@@ -1,22 +1,46 @@
-.navigation {
-  display: inline-block;
+& {
+  padding-top: 15px;
 }
 
-.login {
-  display: inline-block;
-  float: right;
-  .login-form {
-    .login-block {
-      display: inline-block
-    }
-    .logon-block {
-      display: none;
-    }
-    &.logged .login-block {
-      display: none;
-    }
-    &.logged .logon-block {
-      display: inline-block;
-    }
+.login-region{
+  position: absolute;
+  right: 65px;
+  width: 250px;
+}
+@media (min-width: 768px) {
+  .login-region{
+    right: 15px;
   }
 }
+.login-view {
+  display: inline-block;
+  margin-top: 7px;
+  float: right;
+  .login-block {
+    display: inline-block;
+  }
+  .logon-block {
+    display: none;
+  }
+  &.logged .login-block {
+    display: none;
+  }
+  &.logged .logon-block {
+    display: inline-block;
+  }
+
+  .form-group {
+    display: block;
+    margin-bottom: 25px;
+  }
+  .sign_in_wrap{
+    text-align: center;
+  }
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+

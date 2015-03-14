@@ -11,15 +11,16 @@ Rails.application.routes.draw do
 
   resources :users, except: [:create, :delete], format: false
 
-  resources :documents do
-    resources :pages, shallow: true
+  resources :documents, format: false do
+    resources :pages, shallow: true, format: false
+    get 'count', to: 'pages#count', format: false
     #get 'pages', to: 'pages#index'
     #post 'pages', to: 'pages#create'
     #get 'pages/:id', to: 'pages#show'
     #put 'pages/:id', to: 'pages#update'
   end
 
-  get '/validations', to: 'validations#index'
+  get '/validations', to: 'validations#index', format: false
 
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener"

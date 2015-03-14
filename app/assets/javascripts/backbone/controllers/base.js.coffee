@@ -5,12 +5,10 @@
 			@region = options.region
 			super options
 
-		close: (args...) ->
+		destroy: (args...) ->
 			delete @region
 			delete @options
 			super args
 
 		show: (view) ->
-       @region.show view
-
-  Controllers
+       @region.show(view)
