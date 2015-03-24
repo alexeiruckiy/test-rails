@@ -3,5 +3,4 @@
     initialize: (options = {})->
       documents = App.request('documents')
       documents.fetch()
-      @show new MainApp.PresentationsListView(collection: documents)
-#      @show new MainApp.MyPresentationsView()
+      @show new MainApp.PresentationsListView(collection: documents, model: new Backbone.Model())

@@ -1,10 +1,10 @@
 <table id="presentations-list" class="table table-striped">
     <thead>
         <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Pages count</th>
-            <th>Created at</th>
+            <th>Id<input class="form-control js-filter" name="id"></th>
+            <th>Name<input class="form-control js-filter" name="name"></th>
+            <th>Pages count<input class="form-control js-filter" name="pages_count"></th>
+            <th>Created at<input class="form-control js-filter" name="created_at"></th>
         </tr>
     </thead>
     <tbody></tbody>
