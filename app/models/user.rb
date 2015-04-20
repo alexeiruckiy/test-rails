@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
-  has_one :api_key, dependent: :destroy
   belongs_to :entity
   has_many :documents
   has_many :pages, through: :documents
@@ -7,9 +6,7 @@ class User < ActiveRecord::Base
 
   devise :database_authenticatable, :registerable, :confirmable, :timeoutable, :timeout_in => 30.minutes
 
-  #default_scope  ->{ includes(:api_key).references(:api_key) }
-  after_initialize :init_entity
-  after_create :create_api_key
+  before_create :bind_to_entity
 
   validates :name, presence: true, uniqueness: true
   validates :email, presence: true, uniqueness: true
@@ -31,11 +28,8 @@ class User < ActiveRecord::Base
   end
 
   private
-  def create_api_key
-    ApiKey.create(user: self)
+  def bind_to_entity
+    self.entity = Entity.find_by_name('user')
   end
 
-  def init_entity
-    self.entity ||= Entity.find_by_name('user')
-  end
 end

@@ -22,8 +22,7 @@ class SessionsController < Devise::SessionsController
       sign_in(:user, user)
       cookies[:user_id] = user.id
       render json: {
-          id: user.id,
-          token: user.api_key.token
+          id: user.id
       }
     else
       render json: [

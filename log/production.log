@@ -1,0 +1,693 @@
+I, [2015-03-15T00:06:55.148825 #3092]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-15 00:06:55 +0300
+I, [2015-03-15T00:06:55.316834 #3092]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-15T00:06:55.347836 #3092]  INFO -- :   Rendered application/index.html.erb within layouts/application (3.0ms)
+I, [2015-03-15T00:06:55.355837 #3092]  INFO -- : Completed 200 OK in 38ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T00:06:55.449842 #3092]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-03-15 00:06:55 +0300
+I, [2015-03-15T00:06:55.458842 #3092]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-15T00:06:55.465843 #3092]  INFO -- :   Parameters: {"path"=>"stylesheets/application"}
+I, [2015-03-15T00:06:55.477844 #3092]  INFO -- : Completed 500 Internal Server Error in 12ms
+F, [2015-03-15T00:06:55.489844 #3092] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "D:/projects/rails/expert_system/app/views"
+  * "C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-15T00:06:55.516846 #3092]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2015-03-15 00:06:55 +0300
+I, [2015-03-15T00:06:55.523846 #3092]  INFO -- : Processing by ApplicationController#new as JS
+I, [2015-03-15T00:06:55.524846 #3092]  INFO -- :   Parameters: {"path"=>"javascripts/application"}
+I, [2015-03-15T00:06:55.558848 #3092]  INFO -- :   Rendered application/index.html.erb (1.0ms)
+I, [2015-03-15T00:06:55.562848 #3092]  INFO -- : Completed 200 OK in 37ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T00:10:36.877507 #3092]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-15 00:10:36 +0300
+I, [2015-03-15T00:10:36.884507 #3092]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-15T00:10:36.937510 #3092]  INFO -- :   Rendered application/index.html.erb within layouts/application (1.0ms)
+I, [2015-03-15T00:10:36.944511 #3092]  INFO -- : Completed 200 OK in 19ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T00:10:37.069518 #3092]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2015-03-15 00:10:37 +0300
+I, [2015-03-15T00:10:37.075518 #3092]  INFO -- : Processing by ApplicationController#new as JS
+I, [2015-03-15T00:10:37.076518 #3092]  INFO -- :   Parameters: {"path"=>"javascripts/application"}
+I, [2015-03-15T00:10:37.084519 #3092]  INFO -- :   Rendered application/index.html.erb (1.0ms)
+I, [2015-03-15T00:10:37.086519 #3092]  INFO -- : Completed 200 OK in 10ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T00:10:37.106520 #3092]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-03-15 00:10:37 +0300
+I, [2015-03-15T00:10:37.113520 #3092]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-15T00:10:37.114520 #3092]  INFO -- :   Parameters: {"path"=>"stylesheets/application"}
+I, [2015-03-15T00:10:37.122521 #3092]  INFO -- : Completed 500 Internal Server Error in 6ms
+F, [2015-03-15T00:10:37.135522 #3092] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "D:/projects/rails/expert_system/app/views"
+  * "C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-15T00:10:42.147808 #3092]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-03-15 00:10:42 +0300
+I, [2015-03-15T00:10:42.152809 #3092]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-15T00:10:42.153809 #3092]  INFO -- :   Parameters: {"path"=>"stylesheets/application"}
+I, [2015-03-15T00:10:42.160809 #3092]  INFO -- : Completed 500 Internal Server Error in 6ms
+F, [2015-03-15T00:10:42.171810 #3092] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "D:/projects/rails/expert_system/app/views"
+  * "C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-15T00:10:44.274930 #3092]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-15 00:10:44 +0300
+I, [2015-03-15T00:10:44.279930 #3092]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-15T00:10:44.286931 #3092]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.0ms)
+I, [2015-03-15T00:10:44.291931 #3092]  INFO -- : Completed 200 OK in 12ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T00:10:44.380936 #3092]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-03-15 00:10:44 +0300
+I, [2015-03-15T00:10:44.388936 #3092]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-15T00:10:44.389937 #3092]  INFO -- :   Parameters: {"path"=>"stylesheets/application"}
+I, [2015-03-15T00:10:44.397937 #3092]  INFO -- : Completed 500 Internal Server Error in 8ms
+F, [2015-03-15T00:10:44.409938 #3092] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "D:/projects/rails/expert_system/app/views"
+  * "C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-15T00:10:44.413938 #3092]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2015-03-15 00:10:44 +0300
+I, [2015-03-15T00:10:44.419938 #3092]  INFO -- : Processing by ApplicationController#new as JS
+I, [2015-03-15T00:10:44.420938 #3092]  INFO -- :   Parameters: {"path"=>"javascripts/application"}
+I, [2015-03-15T00:10:44.429939 #3092]  INFO -- :   Rendered application/index.html.erb (1.0ms)
+I, [2015-03-15T00:10:44.431939 #3092]  INFO -- : Completed 200 OK in 10ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T00:10:45.331990 #3092]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-15 00:10:45 +0300
+I, [2015-03-15T00:10:45.336991 #3092]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-15T00:10:45.343991 #3092]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.0ms)
+I, [2015-03-15T00:10:45.348991 #3092]  INFO -- : Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T00:10:45.427996 #3092]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2015-03-15 00:10:45 +0300
+I, [2015-03-15T00:10:45.433996 #3092]  INFO -- : Processing by ApplicationController#new as JS
+I, [2015-03-15T00:10:45.434996 #3092]  INFO -- :   Parameters: {"path"=>"javascripts/application"}
+I, [2015-03-15T00:10:45.443997 #3092]  INFO -- :   Rendered application/index.html.erb (0.0ms)
+I, [2015-03-15T00:10:45.445997 #3092]  INFO -- : Completed 200 OK in 11ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T00:10:45.459998 #3092]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-03-15 00:10:45 +0300
+I, [2015-03-15T00:10:45.465998 #3092]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-15T00:10:45.465998 #3092]  INFO -- :   Parameters: {"path"=>"stylesheets/application"}
+I, [2015-03-15T00:10:45.472998 #3092]  INFO -- : Completed 500 Internal Server Error in 7ms
+F, [2015-03-15T00:10:45.484999 #3092] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "D:/projects/rails/expert_system/app/views"
+  * "C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-15T00:11:26.888367 #3092]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-15 00:11:26 +0300
+I, [2015-03-15T00:11:26.894368 #3092]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-15T00:11:26.901368 #3092]  INFO -- :   Rendered application/index.html.erb within layouts/application (1.0ms)
+I, [2015-03-15T00:11:26.906368 #3092]  INFO -- : Completed 200 OK in 11ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T00:11:26.986373 #3092]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-03-15 00:11:26 +0300
+I, [2015-03-15T00:11:26.995373 #3092]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-15T00:11:26.995373 #3092]  INFO -- :   Parameters: {"path"=>"stylesheets/application"}
+I, [2015-03-15T00:11:27.009374 #3092]  INFO -- : Completed 500 Internal Server Error in 13ms
+F, [2015-03-15T00:11:27.021375 #3092] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "D:/projects/rails/expert_system/app/views"
+  * "C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-15T00:11:27.024375 #3092]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2015-03-15 00:11:27 +0300
+I, [2015-03-15T00:11:27.031376 #3092]  INFO -- : Processing by ApplicationController#new as JS
+I, [2015-03-15T00:11:27.032376 #3092]  INFO -- :   Parameters: {"path"=>"javascripts/application"}
+I, [2015-03-15T00:11:27.042376 #3092]  INFO -- :   Rendered application/index.html.erb (1.0ms)
+I, [2015-03-15T00:11:27.047376 #3092]  INFO -- : Completed 200 OK in 14ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T00:12:10.460860 #4192]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-15 00:12:10 +0300
+I, [2015-03-15T00:12:10.647870 #4192]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-15T00:12:10.678872 #4192]  INFO -- :   Rendered application/index.html.erb within layouts/application (3.0ms)
+I, [2015-03-15T00:12:10.687873 #4192]  INFO -- : Completed 200 OK in 39ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T00:12:10.805879 #4192]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2015-03-15 00:12:10 +0300
+I, [2015-03-15T00:12:10.813880 #4192]  INFO -- : Processing by ApplicationController#new as JS
+I, [2015-03-15T00:12:10.816880 #4192]  INFO -- :   Parameters: {"path"=>"javascripts/application"}
+I, [2015-03-15T00:12:10.856882 #4192]  INFO -- :   Rendered application/index.html.erb (1.0ms)
+I, [2015-03-15T00:12:10.858882 #4192]  INFO -- : Completed 200 OK in 35ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T00:12:10.868883 #4192]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-03-15 00:12:10 +0300
+I, [2015-03-15T00:12:10.875883 #4192]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-15T00:12:10.876883 #4192]  INFO -- :   Parameters: {"path"=>"stylesheets/application"}
+I, [2015-03-15T00:12:10.887884 #4192]  INFO -- : Completed 500 Internal Server Error in 11ms
+F, [2015-03-15T00:12:10.901885 #4192] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "D:/projects/rails/expert_system/app/views"
+  * "C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-15T00:12:15.675158 #4192]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-15 00:12:15 +0300
+I, [2015-03-15T00:12:15.681158 #4192]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-15T00:12:15.689159 #4192]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.0ms)
+I, [2015-03-15T00:12:15.694159 #4192]  INFO -- : Completed 200 OK in 12ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T00:12:15.766163 #4192]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2015-03-15 00:12:15 +0300
+I, [2015-03-15T00:12:15.771163 #4192]  INFO -- : Processing by ApplicationController#new as JS
+I, [2015-03-15T00:12:15.777164 #4192]  INFO -- :   Parameters: {"path"=>"javascripts/application"}
+I, [2015-03-15T00:12:15.785164 #4192]  INFO -- :   Rendered application/index.html.erb (0.0ms)
+I, [2015-03-15T00:12:15.787164 #4192]  INFO -- : Completed 200 OK in 8ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T00:12:15.793165 #4192]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-03-15 00:12:15 +0300
+I, [2015-03-15T00:12:15.799165 #4192]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-15T00:12:15.800165 #4192]  INFO -- :   Parameters: {"path"=>"stylesheets/application"}
+I, [2015-03-15T00:12:15.861168 #4192]  INFO -- : Completed 500 Internal Server Error in 60ms
+F, [2015-03-15T00:12:15.873169 #4192] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "D:/projects/rails/expert_system/app/views"
+  * "C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-15T00:12:28.049866 #4192]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-15 00:12:28 +0300
+I, [2015-03-15T00:12:28.056866 #4192]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-15T00:12:28.064866 #4192]  INFO -- :   Rendered application/index.html.erb within layouts/application (1.0ms)
+I, [2015-03-15T00:12:28.069867 #4192]  INFO -- : Completed 200 OK in 12ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-15T00:12:28.121870 #4192]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-03-15 00:12:28 +0300
+I, [2015-03-15T00:12:28.132870 #4192]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-15T00:12:28.132870 #4192]  INFO -- :   Parameters: {"path"=>"stylesheets/application"}
+I, [2015-03-15T00:12:28.140871 #4192]  INFO -- : Completed 500 Internal Server Error in 6ms
+F, [2015-03-15T00:12:28.152871 #4192] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "D:/projects/rails/expert_system/app/views"
+  * "C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-15T00:12:28.156872 #4192]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2015-03-15 00:12:28 +0300
+I, [2015-03-15T00:12:28.162872 #4192]  INFO -- : Processing by ApplicationController#new as JS
+I, [2015-03-15T00:12:28.162872 #4192]  INFO -- :   Parameters: {"path"=>"javascripts/application"}
+I, [2015-03-15T00:12:28.171873 #4192]  INFO -- :   Rendered application/index.html.erb (1.0ms)
+I, [2015-03-15T00:12:28.173873 #4192]  INFO -- : Completed 200 OK in 9ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:26:26.298018 #4887]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 02:26:26 +0300
+I, [2015-03-22T02:26:26.346969 #4887]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T02:26:26.386024 #4887]  INFO -- :   Rendered application/index.html.erb within layouts/application (1.3ms)
+I, [2015-03-22T02:26:26.389703 #4887]  INFO -- : Completed 200 OK in 42ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:26:26.421374 #4887]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-03-22 02:26:26 +0300
+I, [2015-03-22T02:26:26.425981 #4887]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-22T02:26:26.426336 #4887]  INFO -- :   Parameters: {"path"=>"stylesheets/application"}
+I, [2015-03-22T02:26:26.431803 #4887]  INFO -- : Completed 500 Internal Server Error in 5ms
+F, [2015-03-22T02:26:26.444820 #4887] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/pk/proj/expert_system/app/views"
+  * "/home/pk/.rvm/gems/ruby-2.0.0-p598/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-22T02:26:26.446695 #4887]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2015-03-22 02:26:26 +0300
+I, [2015-03-22T02:26:26.450896 #4887]  INFO -- : Processing by ApplicationController#new as JS
+I, [2015-03-22T02:26:26.451156 #4887]  INFO -- :   Parameters: {"path"=>"javascripts/application"}
+I, [2015-03-22T02:26:26.462561 #4887]  INFO -- :   Rendered application/index.html.erb (1.0ms)
+I, [2015-03-22T02:26:26.463518 #4887]  INFO -- : Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:26:34.994011 #4887]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 02:26:34 +0300
+I, [2015-03-22T02:26:34.997324 #4887]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T02:26:35.001099 #4887]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-03-22T02:26:35.003254 #4887]  INFO -- : Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:26:35.032015 #4887]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2015-03-22 02:26:35 +0300
+I, [2015-03-22T02:26:35.036929 #4887]  INFO -- : Processing by ApplicationController#new as JS
+I, [2015-03-22T02:26:35.040967 #4887]  INFO -- :   Parameters: {"path"=>"javascripts/application"}
+I, [2015-03-22T02:26:35.045667 #4887]  INFO -- :   Rendered application/index.html.erb (0.2ms)
+I, [2015-03-22T02:26:35.046471 #4887]  INFO -- : Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:26:35.050698 #4887]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-03-22 02:26:35 +0300
+I, [2015-03-22T02:26:35.055601 #4887]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-22T02:26:35.055933 #4887]  INFO -- :   Parameters: {"path"=>"stylesheets/application"}
+I, [2015-03-22T02:26:35.061878 #4887]  INFO -- : Completed 500 Internal Server Error in 5ms
+F, [2015-03-22T02:26:35.069289 #4887] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/pk/proj/expert_system/app/views"
+  * "/home/pk/.rvm/gems/ruby-2.0.0-p598/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-22T02:27:14.349217 #4887]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 02:27:14 +0300
+I, [2015-03-22T02:27:14.354238 #4887]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T02:27:14.357160 #4887]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-03-22T02:27:14.359481 #4887]  INFO -- : Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:27:14.453529 #4887]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-03-22 02:27:14 +0300
+I, [2015-03-22T02:27:14.456282 #4887]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-22T02:27:14.456476 #4887]  INFO -- :   Parameters: {"path"=>"stylesheets/application"}
+I, [2015-03-22T02:27:14.460023 #4887]  INFO -- : Completed 500 Internal Server Error in 3ms
+F, [2015-03-22T02:27:14.467016 #4887] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/pk/proj/expert_system/app/views"
+  * "/home/pk/.rvm/gems/ruby-2.0.0-p598/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-22T02:27:14.472696 #4887]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2015-03-22 02:27:14 +0300
+I, [2015-03-22T02:27:14.475693 #4887]  INFO -- : Processing by ApplicationController#new as JS
+I, [2015-03-22T02:27:14.476267 #4887]  INFO -- :   Parameters: {"path"=>"javascripts/application"}
+I, [2015-03-22T02:27:14.479893 #4887]  INFO -- :   Rendered application/index.html.erb (0.2ms)
+I, [2015-03-22T02:27:14.480621 #4887]  INFO -- : Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:27:14.524607 #4887]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2015-03-22 02:27:14 +0300
+I, [2015-03-22T02:27:14.532331 #4887]  INFO -- : Processing by ApplicationController#new as 
+I, [2015-03-22T02:27:14.532947 #4887]  INFO -- :   Parameters: {"path"=>"favicon"}
+I, [2015-03-22T02:27:14.542727 #4887]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.9ms)
+I, [2015-03-22T02:27:14.545357 #4887]  INFO -- : Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:27:14.622853 #4887]  INFO -- : Started GET "/favicon.ico" for 127.0.0.1 at 2015-03-22 02:27:14 +0300
+I, [2015-03-22T02:27:14.630357 #4887]  INFO -- : Processing by ApplicationController#new as 
+I, [2015-03-22T02:27:14.630599 #4887]  INFO -- :   Parameters: {"path"=>"favicon"}
+I, [2015-03-22T02:27:14.634832 #4887]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-03-22T02:27:14.636937 #4887]  INFO -- : Completed 200 OK in 6ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:27:26.270590 #4887]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 02:27:26 +0300
+I, [2015-03-22T02:27:26.276621 #4887]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T02:27:26.282786 #4887]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-03-22T02:27:26.336748 #4887]  INFO -- : Completed 200 OK in 59ms (Views: 54.6ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:27:26.486470 #4887]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2015-03-22 02:27:26 +0300
+I, [2015-03-22T02:27:26.494227 #4887]  INFO -- : Processing by ApplicationController#new as JS
+I, [2015-03-22T02:27:26.494451 #4887]  INFO -- :   Parameters: {"path"=>"javascripts/application"}
+I, [2015-03-22T02:27:26.499026 #4887]  INFO -- :   Rendered application/index.html.erb (0.2ms)
+I, [2015-03-22T02:27:26.499756 #4887]  INFO -- : Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:27:26.503204 #4887]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-03-22 02:27:26 +0300
+I, [2015-03-22T02:27:26.506031 #4887]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-22T02:27:26.506300 #4887]  INFO -- :   Parameters: {"path"=>"stylesheets/application"}
+I, [2015-03-22T02:27:26.510649 #4887]  INFO -- : Completed 500 Internal Server Error in 4ms
+F, [2015-03-22T02:27:26.516452 #4887] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/pk/proj/expert_system/app/views"
+  * "/home/pk/.rvm/gems/ruby-2.0.0-p598/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-22T02:27:43.023386 #4887]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-03-22 02:27:43 +0300
+I, [2015-03-22T02:27:43.026246 #4887]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-22T02:27:43.026443 #4887]  INFO -- :   Parameters: {"path"=>"stylesheets/application"}
+I, [2015-03-22T02:27:43.029820 #4887]  INFO -- : Completed 500 Internal Server Error in 3ms
+F, [2015-03-22T02:27:43.035612 #4887] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/pk/proj/expert_system/app/views"
+  * "/home/pk/.rvm/gems/ruby-2.0.0-p598/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-22T02:28:13.053059 #4887]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 02:28:13 +0300
+I, [2015-03-22T02:28:13.056736 #4887]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T02:28:13.060168 #4887]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-03-22T02:28:13.062234 #4887]  INFO -- : Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:28:13.116819 #4887]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-03-22 02:28:13 +0300
+I, [2015-03-22T02:28:13.120226 #4887]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-22T02:28:13.120554 #4887]  INFO -- :   Parameters: {"path"=>"stylesheets/application"}
+I, [2015-03-22T02:28:13.129880 #4887]  INFO -- : Completed 500 Internal Server Error in 5ms
+F, [2015-03-22T02:28:13.140488 #4887] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/pk/proj/expert_system/app/views"
+  * "/home/pk/.rvm/gems/ruby-2.0.0-p598/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-22T02:28:13.142772 #4887]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2015-03-22 02:28:13 +0300
+I, [2015-03-22T02:28:13.146063 #4887]  INFO -- : Processing by ApplicationController#new as JS
+I, [2015-03-22T02:28:13.146291 #4887]  INFO -- :   Parameters: {"path"=>"javascripts/application"}
+I, [2015-03-22T02:28:13.149962 #4887]  INFO -- :   Rendered application/index.html.erb (0.2ms)
+I, [2015-03-22T02:28:13.150645 #4887]  INFO -- : Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:28:47.822673 #4887]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 02:28:47 +0300
+I, [2015-03-22T02:28:47.825541 #4887]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T02:28:47.829098 #4887]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-03-22T02:28:47.831160 #4887]  INFO -- : Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:28:47.936703 #4887]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-03-22 02:28:47 +0300
+I, [2015-03-22T02:28:47.939858 #4887]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-22T02:28:47.951144 #4887]  INFO -- :   Parameters: {"path"=>"stylesheets/application"}
+I, [2015-03-22T02:28:47.954695 #4887]  INFO -- : Completed 500 Internal Server Error in 3ms
+F, [2015-03-22T02:28:47.960427 #4887] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/pk/proj/expert_system/app/views"
+  * "/home/pk/.rvm/gems/ruby-2.0.0-p598/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-22T02:28:47.962953 #4887]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2015-03-22 02:28:47 +0300
+I, [2015-03-22T02:28:47.967313 #4887]  INFO -- : Processing by ApplicationController#new as JS
+I, [2015-03-22T02:28:47.967532 #4887]  INFO -- :   Parameters: {"path"=>"javascripts/application"}
+I, [2015-03-22T02:28:47.971468 #4887]  INFO -- :   Rendered application/index.html.erb (0.2ms)
+I, [2015-03-22T02:28:47.972714 #4887]  INFO -- : Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:30:57.058977 #4887]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 02:30:57 +0300
+I, [2015-03-22T02:30:57.063089 #4887]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T02:30:57.067044 #4887]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-03-22T02:30:57.069302 #4887]  INFO -- : Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:30:57.161892 #4887]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-03-22 02:30:57 +0300
+I, [2015-03-22T02:30:57.169765 #4887]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-22T02:30:57.169980 #4887]  INFO -- :   Parameters: {"path"=>"stylesheets/application"}
+I, [2015-03-22T02:30:57.173318 #4887]  INFO -- : Completed 500 Internal Server Error in 3ms
+F, [2015-03-22T02:30:57.179047 #4887] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/pk/proj/expert_system/app/views"
+  * "/home/pk/.rvm/gems/ruby-2.0.0-p598/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-22T02:30:57.180786 #4887]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2015-03-22 02:30:57 +0300
+I, [2015-03-22T02:30:57.183598 #4887]  INFO -- : Processing by ApplicationController#new as JS
+I, [2015-03-22T02:30:57.183927 #4887]  INFO -- :   Parameters: {"path"=>"javascripts/application"}
+I, [2015-03-22T02:30:57.188024 #4887]  INFO -- :   Rendered application/index.html.erb (0.2ms)
+I, [2015-03-22T02:30:57.188724 #4887]  INFO -- : Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:38:07.250876 #4887]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 02:38:07 +0300
+I, [2015-03-22T02:38:07.256822 #4887]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T02:38:07.262566 #4887]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-03-22T02:38:07.264534 #4887]  INFO -- : Completed 200 OK in 7ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:38:07.367746 #4887]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2015-03-22 02:38:07 +0300
+I, [2015-03-22T02:38:07.370543 #4887]  INFO -- : Processing by ApplicationController#new as JS
+I, [2015-03-22T02:38:07.370738 #4887]  INFO -- :   Parameters: {"path"=>"javascripts/application"}
+I, [2015-03-22T02:38:07.374910 #4887]  INFO -- :   Rendered application/index.html.erb (0.2ms)
+I, [2015-03-22T02:38:07.375609 #4887]  INFO -- : Completed 200 OK in 5ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:38:07.383430 #4887]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-03-22 02:38:07 +0300
+I, [2015-03-22T02:38:07.386213 #4887]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-22T02:38:07.386410 #4887]  INFO -- :   Parameters: {"path"=>"stylesheets/application"}
+I, [2015-03-22T02:38:07.389673 #4887]  INFO -- : Completed 500 Internal Server Error in 3ms
+F, [2015-03-22T02:38:07.395541 #4887] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/pk/proj/expert_system/app/views"
+  * "/home/pk/.rvm/gems/ruby-2.0.0-p598/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-22T02:38:08.497819 #4887]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 02:38:08 +0300
+I, [2015-03-22T02:38:08.503732 #4887]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T02:38:08.510122 #4887]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-03-22T02:38:08.512125 #4887]  INFO -- : Completed 200 OK in 8ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:38:08.605038 #4887]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-03-22 02:38:08 +0300
+I, [2015-03-22T02:38:08.612182 #4887]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-22T02:38:08.612370 #4887]  INFO -- :   Parameters: {"path"=>"stylesheets/application"}
+I, [2015-03-22T02:38:08.615690 #4887]  INFO -- : Completed 500 Internal Server Error in 3ms
+F, [2015-03-22T02:38:08.621339 #4887] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/pk/proj/expert_system/app/views"
+  * "/home/pk/.rvm/gems/ruby-2.0.0-p598/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-22T02:38:08.623120 #4887]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2015-03-22 02:38:08 +0300
+I, [2015-03-22T02:38:08.625823 #4887]  INFO -- : Processing by ApplicationController#new as JS
+I, [2015-03-22T02:38:08.626008 #4887]  INFO -- :   Parameters: {"path"=>"javascripts/application"}
+I, [2015-03-22T02:38:08.629442 #4887]  INFO -- :   Rendered application/index.html.erb (0.1ms)
+I, [2015-03-22T02:38:08.630293 #4887]  INFO -- : Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:38:10.173820 #4887]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 02:38:10 +0300
+I, [2015-03-22T02:38:10.176449 #4887]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T02:38:10.179656 #4887]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-03-22T02:38:10.181659 #4887]  INFO -- : Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:38:10.275623 #4887]  INFO -- : Started GET "/stylesheets/application.css" for 127.0.0.1 at 2015-03-22 02:38:10 +0300
+I, [2015-03-22T02:38:10.282649 #4887]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-22T02:38:10.282859 #4887]  INFO -- :   Parameters: {"path"=>"stylesheets/application"}
+I, [2015-03-22T02:38:10.286124 #4887]  INFO -- : Completed 500 Internal Server Error in 3ms
+F, [2015-03-22T02:38:10.291961 #4887] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/pk/proj/expert_system/app/views"
+  * "/home/pk/.rvm/gems/ruby-2.0.0-p598/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-22T02:38:10.293691 #4887]  INFO -- : Started GET "/javascripts/application.js" for 127.0.0.1 at 2015-03-22 02:38:10 +0300
+I, [2015-03-22T02:38:10.296511 #4887]  INFO -- : Processing by ApplicationController#new as JS
+I, [2015-03-22T02:38:10.296738 #4887]  INFO -- :   Parameters: {"path"=>"javascripts/application"}
+I, [2015-03-22T02:38:10.300627 #4887]  INFO -- :   Rendered application/index.html.erb (0.2ms)
+I, [2015-03-22T02:38:10.301331 #4887]  INFO -- : Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:39:43.527406 #5307]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 02:39:43 +0300
+I, [2015-03-22T02:39:43.575674 #5307]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T02:39:43.615659 #5307]  INFO -- :   Rendered application/index.html.erb within layouts/application (1.2ms)
+I, [2015-03-22T02:39:43.619368 #5307]  INFO -- : Completed 200 OK in 43ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:39:43.928600 #5307]  INFO -- : Started GET "/assets/application-d841f492bdbc797a290a6984885c25dc.css" for 127.0.0.1 at 2015-03-22 02:39:43 +0300
+I, [2015-03-22T02:39:43.933186 #5307]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-22T02:39:43.942949 #5307]  INFO -- :   Parameters: {"path"=>"assets/application-d841f492bdbc797a290a6984885c25dc"}
+I, [2015-03-22T02:39:43.949834 #5307]  INFO -- : Completed 500 Internal Server Error in 6ms
+F, [2015-03-22T02:39:43.955574 #5307] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/pk/proj/expert_system/app/views"
+  * "/home/pk/.rvm/gems/ruby-2.0.0-p598/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-22T02:39:43.957347 #5307]  INFO -- : Started GET "/assets/application-9ad17e8d4eb3a2befa209f312b4d7fba.js" for 127.0.0.1 at 2015-03-22 02:39:43 +0300
+I, [2015-03-22T02:39:43.960175 #5307]  INFO -- : Processing by ApplicationController#new as JS
+I, [2015-03-22T02:39:43.960376 #5307]  INFO -- :   Parameters: {"path"=>"assets/application-9ad17e8d4eb3a2befa209f312b4d7fba"}
+I, [2015-03-22T02:39:43.969251 #5307]  INFO -- :   Rendered application/index.html.erb (1.0ms)
+I, [2015-03-22T02:39:43.970859 #5307]  INFO -- : Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:40:26.334431 #5307]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 02:40:26 +0300
+I, [2015-03-22T02:40:26.337325 #5307]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T02:40:26.340829 #5307]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-03-22T02:40:26.342959 #5307]  INFO -- : Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:40:26.462847 #5307]  INFO -- : Started GET "/assets/application-d841f492bdbc797a290a6984885c25dc.css" for 127.0.0.1 at 2015-03-22 02:40:26 +0300
+I, [2015-03-22T02:40:26.475940 #5307]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-22T02:40:26.476152 #5307]  INFO -- :   Parameters: {"path"=>"assets/application-d841f492bdbc797a290a6984885c25dc"}
+I, [2015-03-22T02:40:26.479487 #5307]  INFO -- : Completed 500 Internal Server Error in 3ms
+F, [2015-03-22T02:40:26.485076 #5307] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/pk/proj/expert_system/app/views"
+  * "/home/pk/.rvm/gems/ruby-2.0.0-p598/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-22T02:40:26.487232 #5307]  INFO -- : Started GET "/assets/application-9ad17e8d4eb3a2befa209f312b4d7fba.js" for 127.0.0.1 at 2015-03-22 02:40:26 +0300
+I, [2015-03-22T02:40:26.492033 #5307]  INFO -- : Processing by ApplicationController#new as JS
+I, [2015-03-22T02:40:26.492456 #5307]  INFO -- :   Parameters: {"path"=>"assets/application-9ad17e8d4eb3a2befa209f312b4d7fba"}
+I, [2015-03-22T02:40:26.498940 #5307]  INFO -- :   Rendered application/index.html.erb (0.2ms)
+I, [2015-03-22T02:40:26.499630 #5307]  INFO -- : Completed 200 OK in 7ms (Views: 2.6ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:41:39.024596 #5307]  INFO -- : Started GET "/assets/application-d841f492bdbc797a290a6984885c25dc.css" for 127.0.0.1 at 2015-03-22 02:41:39 +0300
+I, [2015-03-22T02:41:39.028323 #5307]  INFO -- : Processing by ApplicationController#new as CSS
+I, [2015-03-22T02:41:39.028579 #5307]  INFO -- :   Parameters: {"path"=>"assets/application-d841f492bdbc797a290a6984885c25dc"}
+I, [2015-03-22T02:41:39.032081 #5307]  INFO -- : Completed 500 Internal Server Error in 3ms
+F, [2015-03-22T02:41:39.091350 #5307] FATAL -- : 
+ActionView::MissingTemplate (Missing template application/index with {:locale=>[:en], :formats=>[:css], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/home/pk/proj/expert_system/app/views"
+  * "/home/pk/.rvm/gems/ruby-2.0.0-p598/gems/devise-3.4.1/app/views"
+):
+  app/controllers/application_controller.rb:14:in `new'
+
+
+I, [2015-03-22T02:46:11.183428 #5482]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 02:46:11 +0300
+I, [2015-03-22T02:46:11.231358 #5482]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T02:46:11.271605 #5482]  INFO -- :   Rendered application/index.html.erb within layouts/application (1.2ms)
+I, [2015-03-22T02:46:11.275239 #5482]  INFO -- : Completed 200 OK in 43ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:46:14.748937 #5482]  INFO -- : Started GET "/validations" for 127.0.0.1 at 2015-03-22 02:46:14 +0300
+I, [2015-03-22T02:46:14.755760 #5482]  INFO -- : Processing by ValidationsController#index as JSON
+E, [2015-03-22T02:46:14.768969 #5482] ERROR -- : SQLite3::SQLException: no such table: validations: SELECT "validations".* FROM "validations" INNER JOIN "entities" ON "entities"."id" = "validations"."entity_id"
+I, [2015-03-22T02:46:14.769765 #5482]  INFO -- : Completed 500 Internal Server Error in 14ms
+F, [2015-03-22T02:46:14.775564 #5482] FATAL -- : 
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: validations: SELECT "validations".* FROM "validations" INNER JOIN "entities" ON "entities"."id" = "validations"."entity_id"):
+  app/controllers/validations_controller.rb:4:in `block in index'
+  app/controllers/validations_controller.rb:3:in `index'
+
+
+I, [2015-03-22T02:46:47.608364 #5482]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 02:46:47 +0300
+I, [2015-03-22T02:46:47.611553 #5482]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T02:46:47.615455 #5482]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-03-22T02:46:47.617808 #5482]  INFO -- : Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:46:47.892744 #5482]  INFO -- : Started GET "/validations" for 127.0.0.1 at 2015-03-22 02:46:47 +0300
+I, [2015-03-22T02:46:47.895968 #5482]  INFO -- : Processing by ValidationsController#index as JSON
+E, [2015-03-22T02:46:47.898500 #5482] ERROR -- : SQLite3::SQLException: no such table: validations: SELECT "validations".* FROM "validations" INNER JOIN "entities" ON "entities"."id" = "validations"."entity_id"
+I, [2015-03-22T02:46:47.899033 #5482]  INFO -- : Completed 500 Internal Server Error in 3ms
+F, [2015-03-22T02:46:47.904716 #5482] FATAL -- : 
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: validations: SELECT "validations".* FROM "validations" INNER JOIN "entities" ON "entities"."id" = "validations"."entity_id"):
+  app/controllers/validations_controller.rb:4:in `block in index'
+  app/controllers/validations_controller.rb:3:in `index'
+
+
+I, [2015-03-22T02:47:00.057736 #5482]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 02:47:00 +0300
+I, [2015-03-22T02:47:00.060235 #5482]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T02:47:00.063338 #5482]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-03-22T02:47:00.065235 #5482]  INFO -- : Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:47:03.315524 #5482]  INFO -- : Started GET "/validations" for 127.0.0.1 at 2015-03-22 02:47:03 +0300
+I, [2015-03-22T02:47:03.318722 #5482]  INFO -- : Processing by ValidationsController#index as JSON
+E, [2015-03-22T02:47:03.321060 #5482] ERROR -- : SQLite3::SQLException: no such table: validations: SELECT "validations".* FROM "validations" INNER JOIN "entities" ON "entities"."id" = "validations"."entity_id"
+I, [2015-03-22T02:47:03.321594 #5482]  INFO -- : Completed 500 Internal Server Error in 3ms
+F, [2015-03-22T02:47:03.327307 #5482] FATAL -- : 
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: validations: SELECT "validations".* FROM "validations" INNER JOIN "entities" ON "entities"."id" = "validations"."entity_id"):
+  app/controllers/validations_controller.rb:4:in `block in index'
+  app/controllers/validations_controller.rb:3:in `index'
+
+
+I, [2015-03-22T02:48:11.148861 #5482]  INFO -- : Started GET "/validations" for 127.0.0.1 at 2015-03-22 02:48:11 +0300
+I, [2015-03-22T02:48:11.152460 #5482]  INFO -- : Processing by ValidationsController#index as JSON
+E, [2015-03-22T02:48:23.892448 #5482] ERROR -- : SQLite3::SQLException: no such table: validations: SELECT "validations".* FROM "validations" INNER JOIN "entities" ON "entities"."id" = "validations"."entity_id"
+I, [2015-03-22T02:48:23.893582 #5482]  INFO -- : Completed 500 Internal Server Error in 12741ms
+F, [2015-03-22T02:48:23.901043 #5482] FATAL -- : 
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: validations: SELECT "validations".* FROM "validations" INNER JOIN "entities" ON "entities"."id" = "validations"."entity_id"):
+  app/controllers/validations_controller.rb:4:in `block in index'
+  app/controllers/validations_controller.rb:3:in `index'
+
+
+I, [2015-03-22T02:48:33.821647 #5482]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 02:48:33 +0300
+I, [2015-03-22T02:48:33.827872 #5482]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T02:48:33.832134 #5482]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-03-22T02:48:33.834287 #5482]  INFO -- : Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:48:37.079882 #5482]  INFO -- : Started GET "/validations" for 127.0.0.1 at 2015-03-22 02:48:37 +0300
+I, [2015-03-22T02:48:37.084063 #5482]  INFO -- : Processing by ValidationsController#index as JSON
+E, [2015-03-22T02:49:35.396330 #5482] ERROR -- : SQLite3::SQLException: no such table: validations: SELECT "validations".* FROM "validations" INNER JOIN "entities" ON "entities"."id" = "validations"."entity_id"
+I, [2015-03-22T02:49:35.397562 #5482]  INFO -- : Completed 500 Internal Server Error in 58313ms
+F, [2015-03-22T02:49:35.405539 #5482] FATAL -- : 
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: validations: SELECT "validations".* FROM "validations" INNER JOIN "entities" ON "entities"."id" = "validations"."entity_id"):
+  app/controllers/validations_controller.rb:4:in `block in index'
+  app/controllers/validations_controller.rb:3:in `index'
+
+
+I, [2015-03-22T02:49:46.156800 #5482]  INFO -- : Started GET "/validations" for 127.0.0.1 at 2015-03-22 02:49:46 +0300
+I, [2015-03-22T02:49:46.160030 #5482]  INFO -- : Processing by ValidationsController#index as JSON
+E, [2015-03-22T02:49:51.332082 #5482] ERROR -- : SQLite3::SQLException: no such table: validations: SELECT "validations".* FROM "validations" INNER JOIN "entities" ON "entities"."id" = "validations"."entity_id"
+I, [2015-03-22T02:49:51.332722 #5482]  INFO -- : Completed 500 Internal Server Error in 5172ms
+F, [2015-03-22T02:49:51.340938 #5482] FATAL -- : 
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: validations: SELECT "validations".* FROM "validations" INNER JOIN "entities" ON "entities"."id" = "validations"."entity_id"):
+  app/controllers/validations_controller.rb:4:in `block in index'
+  app/controllers/validations_controller.rb:3:in `index'
+
+
+I, [2015-03-22T02:57:58.385085 #5915]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 02:57:58 +0300
+I, [2015-03-22T02:57:58.434930 #5915]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T02:57:58.473007 #5915]  INFO -- :   Rendered application/index.html.erb within layouts/application (1.3ms)
+I, [2015-03-22T02:57:58.476841 #5915]  INFO -- : Completed 200 OK in 41ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:57:58.854147 #5915]  INFO -- : Started GET "/validations" for 127.0.0.1 at 2015-03-22 02:57:58 +0300
+I, [2015-03-22T02:57:58.860841 #5915]  INFO -- : Processing by ValidationsController#index as JSON
+E, [2015-03-22T02:58:01.654889 #5915] ERROR -- : SQLite3::SQLException: no such table: validations: SELECT "validations".* FROM "validations" INNER JOIN "entities" ON "entities"."id" = "validations"."entity_id"
+I, [2015-03-22T02:58:01.655621 #5915]  INFO -- : Completed 500 Internal Server Error in 2794ms
+F, [2015-03-22T02:58:01.661653 #5915] FATAL -- : 
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: validations: SELECT "validations".* FROM "validations" INNER JOIN "entities" ON "entities"."id" = "validations"."entity_id"):
+  app/controllers/validations_controller.rb:4:in `block in index'
+  app/controllers/validations_controller.rb:3:in `index'
+
+
+I, [2015-03-22T02:58:16.098547 #5915]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 02:58:16 +0300
+I, [2015-03-22T02:58:16.101632 #5915]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T02:58:16.105469 #5915]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-03-22T02:58:16.107823 #5915]  INFO -- : Completed 200 OK in 6ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T02:58:19.538069 #5915]  INFO -- : Started GET "/validations" for 127.0.0.1 at 2015-03-22 02:58:19 +0300
+I, [2015-03-22T02:58:19.541426 #5915]  INFO -- : Processing by ValidationsController#index as JSON
+E, [2015-03-22T02:58:19.544053 #5915] ERROR -- : SQLite3::SQLException: no such table: validations: SELECT "validations".* FROM "validations" INNER JOIN "entities" ON "entities"."id" = "validations"."entity_id"
+I, [2015-03-22T02:58:19.544642 #5915]  INFO -- : Completed 500 Internal Server Error in 3ms
+F, [2015-03-22T02:58:19.550588 #5915] FATAL -- : 
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such table: validations: SELECT "validations".* FROM "validations" INNER JOIN "entities" ON "entities"."id" = "validations"."entity_id"):
+  app/controllers/validations_controller.rb:4:in `block in index'
+  app/controllers/validations_controller.rb:3:in `index'
+
+
+E, [2015-03-22T16:41:51.349093 #4917] ERROR -- : Binary data inserted for `string` type on column `encrypted_password`
+I, [2015-03-22T16:42:17.100768 #4940]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 16:42:17 +0300
+I, [2015-03-22T16:42:17.158485 #4940]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T16:42:17.270328 #4940]  INFO -- :   Rendered application/index.html.erb within layouts/application (1.3ms)
+I, [2015-03-22T16:42:17.274627 #4940]  INFO -- : Completed 200 OK in 112ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T16:42:17.733091 #4940]  INFO -- : Started GET "/validations" for 127.0.0.1 at 2015-03-22 16:42:17 +0300
+I, [2015-03-22T16:42:17.749087 #4940]  INFO -- : Processing by ValidationsController#index as JSON
+I, [2015-03-22T16:42:18.000910 #4940]  INFO -- : Completed 200 OK in 251ms (Views: 0.4ms | ActiveRecord: 7.9ms)
+I, [2015-03-22T16:42:21.740846 #4940]  INFO -- : Started POST "/users/sign_in" for 127.0.0.1 at 2015-03-22 16:42:21 +0300
+I, [2015-03-22T16:42:21.752975 #4940]  INFO -- : Processing by SessionsController#create as JSON
+I, [2015-03-22T16:42:21.753223 #4940]  INFO -- :   Parameters: {"name"=>"admin", "password"=>"[FILTERED]", "session"=>{"name"=>"admin", "password"=>"[FILTERED]"}}
+I, [2015-03-22T16:42:21.965379 #4940]  INFO -- : Completed 403 Forbidden in 211ms (Views: 1.6ms | ActiveRecord: 4.0ms)
+I, [2015-03-22T16:42:25.388290 #4940]  INFO -- : Started POST "/users/sign_in" for 127.0.0.1 at 2015-03-22 16:42:25 +0300
+I, [2015-03-22T16:42:25.393649 #4940]  INFO -- : Processing by SessionsController#create as JSON
+I, [2015-03-22T16:42:25.393918 #4940]  INFO -- :   Parameters: {"name"=>"admin", "password"=>"[FILTERED]", "session"=>{"name"=>"admin", "password"=>"[FILTERED]"}}
+I, [2015-03-22T16:42:25.585415 #4940]  INFO -- : Completed 200 OK in 191ms (Views: 0.7ms | ActiveRecord: 2.6ms)
+I, [2015-03-22T16:42:25.620406 #4940]  INFO -- : Started GET "/users/1" for 127.0.0.1 at 2015-03-22 16:42:25 +0300
+I, [2015-03-22T16:42:25.626878 #4940]  INFO -- : Processing by UsersController#show as JSON
+I, [2015-03-22T16:42:25.627101 #4940]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2015-03-22T16:42:25.682953 #4940]  INFO -- : Completed 200 OK in 56ms (Views: 1.7ms | ActiveRecord: 2.9ms)
+I, [2015-03-22T16:42:26.951097 #4940]  INFO -- : Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-03-22 16:42:26 +0300
+I, [2015-03-22T16:42:26.956359 #4940]  INFO -- : Processing by SessionsController#destroy as JSON
+I, [2015-03-22T16:42:26.971146 #4940]  INFO -- :   Rendered text template (0.1ms)
+I, [2015-03-22T16:42:26.972000 #4940]  INFO -- : Completed 200 OK in 15ms (Views: 1.9ms | ActiveRecord: 0.8ms)
+I, [2015-03-22T16:42:36.308277 #4940]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 16:42:36 +0300
+I, [2015-03-22T16:42:36.311398 #4940]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T16:42:36.315037 #4940]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-03-22T16:42:36.317233 #4940]  INFO -- : Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T16:42:39.248379 #4940]  INFO -- : Started GET "/validations" for 127.0.0.1 at 2015-03-22 16:42:39 +0300
+I, [2015-03-22T16:42:39.252612 #4940]  INFO -- : Processing by ValidationsController#index as JSON
+I, [2015-03-22T16:42:39.267020 #4940]  INFO -- : Completed 200 OK in 14ms (Views: 0.4ms | ActiveRecord: 0.9ms)
+I, [2015-03-22T16:42:55.307521 #4940]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 16:42:55 +0300
+I, [2015-03-22T16:42:55.310628 #4940]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T16:42:55.314105 #4940]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-03-22T16:42:55.317752 #4940]  INFO -- : Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T16:42:58.297336 #4940]  INFO -- : Started GET "/validations" for 127.0.0.1 at 2015-03-22 16:42:58 +0300
+I, [2015-03-22T16:42:58.302222 #4940]  INFO -- : Processing by ValidationsController#index as JSON
+I, [2015-03-22T16:42:58.317396 #4940]  INFO -- : Completed 200 OK in 15ms (Views: 0.6ms | ActiveRecord: 0.9ms)
+I, [2015-03-22T16:43:33.106274 #4940]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 16:43:33 +0300
+I, [2015-03-22T16:43:33.109213 #4940]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T16:43:33.113041 #4940]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-03-22T16:43:33.115557 #4940]  INFO -- : Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T16:43:33.430645 #4940]  INFO -- : Started GET "/validations" for 127.0.0.1 at 2015-03-22 16:43:33 +0300
+I, [2015-03-22T16:43:33.434169 #4940]  INFO -- : Processing by ValidationsController#index as JSON
+I, [2015-03-22T16:43:33.447856 #4940]  INFO -- : Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 0.9ms)
+I, [2015-03-22T16:43:34.199447 #4940]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 16:43:34 +0300
+I, [2015-03-22T16:43:34.202190 #4940]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T16:43:34.205557 #4940]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-03-22T16:43:34.207598 #4940]  INFO -- : Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T16:43:34.499812 #4940]  INFO -- : Started GET "/validations" for 127.0.0.1 at 2015-03-22 16:43:34 +0300
+I, [2015-03-22T16:43:34.508272 #4940]  INFO -- : Processing by ValidationsController#index as JSON
+I, [2015-03-22T16:43:34.523813 #4940]  INFO -- : Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+I, [2015-03-22T16:43:43.750656 #4940]  INFO -- : Started POST "/users/sign_in" for 127.0.0.1 at 2015-03-22 16:43:43 +0300
+I, [2015-03-22T16:43:43.755043 #4940]  INFO -- : Processing by SessionsController#create as JSON
+I, [2015-03-22T16:43:43.755298 #4940]  INFO -- :   Parameters: {"name"=>"admin", "password"=>"[FILTERED]", "session"=>{"name"=>"admin", "password"=>"[FILTERED]"}}
+I, [2015-03-22T16:43:43.904221 #4940]  INFO -- : Completed 200 OK in 149ms (Views: 0.7ms | ActiveRecord: 1.0ms)
+I, [2015-03-22T16:43:44.016438 #4940]  INFO -- : Started GET "/users/1" for 127.0.0.1 at 2015-03-22 16:43:44 +0300
+I, [2015-03-22T16:43:44.024049 #4940]  INFO -- : Processing by UsersController#show as JSON
+I, [2015-03-22T16:43:44.024575 #4940]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2015-03-22T16:43:44.056027 #4940]  INFO -- : Completed 200 OK in 31ms (Views: 2.0ms | ActiveRecord: 1.3ms)
+I, [2015-03-22T16:43:45.371215 #4940]  INFO -- : Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-03-22 16:43:45 +0300
+I, [2015-03-22T16:43:45.375159 #4940]  INFO -- : Processing by SessionsController#destroy as JSON
+I, [2015-03-22T16:43:45.389141 #4940]  INFO -- :   Rendered text template (0.1ms)
+I, [2015-03-22T16:43:45.389894 #4940]  INFO -- : Completed 200 OK in 14ms (Views: 1.3ms | ActiveRecord: 0.8ms)
+I, [2015-03-22T16:43:47.416761 #4940]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-03-22 16:43:47 +0300
+I, [2015-03-22T16:43:47.419806 #4940]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-03-22T16:43:47.423283 #4940]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-03-22T16:43:47.425395 #4940]  INFO -- : Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+I, [2015-03-22T16:43:47.731459 #4940]  INFO -- : Started GET "/validations" for 127.0.0.1 at 2015-03-22 16:43:47 +0300
+I, [2015-03-22T16:43:47.736071 #4940]  INFO -- : Processing by ValidationsController#index as JSON
+I, [2015-03-22T16:43:47.749907 #4940]  INFO -- : Completed 200 OK in 13ms (Views: 0.4ms | ActiveRecord: 0.9ms)
+I, [2015-04-12T14:05:38.524858 #9673]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-04-12 14:05:38 +0300
+I, [2015-04-12T14:05:38.624799 #9673]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-04-12T14:05:38.667862 #9673]  INFO -- :   Rendered application/index.html.erb within layouts/application (1.3ms)
+I, [2015-04-12T14:05:38.671627 #9673]  INFO -- : Completed 200 OK in 42ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+I, [2015-04-12T14:05:39.518526 #9673]  INFO -- : Started GET "/validations" for 127.0.0.1 at 2015-04-12 14:05:39 +0300
+I, [2015-04-12T14:05:39.533283 #9673]  INFO -- : Processing by ValidationsController#index as JSON
+I, [2015-04-12T14:05:39.662868 #9673]  INFO -- : Completed 200 OK in 127ms (Views: 0.5ms | ActiveRecord: 25.4ms)
+I, [2015-04-12T14:05:51.073596 #9673]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-04-12 14:05:51 +0300
+I, [2015-04-12T14:05:51.076838 #9673]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-04-12T14:05:51.081767 #9673]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-04-12T14:05:51.084153 #9673]  INFO -- : Completed 200 OK in 7ms (Views: 4.4ms | ActiveRecord: 0.0ms)
+I, [2015-04-12T14:05:51.504710 #9673]  INFO -- : Started GET "/validations" for 127.0.0.1 at 2015-04-12 14:05:51 +0300
+I, [2015-04-12T14:05:51.515044 #9673]  INFO -- : Processing by ValidationsController#index as JSON
+I, [2015-04-12T14:05:51.530899 #9673]  INFO -- : Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 1.6ms)
+I, [2015-04-12T14:06:04.942341 #9673]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-04-12 14:06:04 +0300
+I, [2015-04-12T14:06:04.945773 #9673]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-04-12T14:06:04.949993 #9673]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-04-12T14:06:04.952145 #9673]  INFO -- : Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+I, [2015-04-12T14:06:05.415904 #9673]  INFO -- : Started GET "/validations" for 127.0.0.1 at 2015-04-12 14:06:05 +0300
+I, [2015-04-12T14:06:05.420583 #9673]  INFO -- : Processing by ValidationsController#index as JSON
+I, [2015-04-12T14:06:05.437034 #9673]  INFO -- : Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 1.1ms)
+I, [2015-04-12T14:06:06.057285 #9673]  INFO -- : Started GET "/" for 127.0.0.1 at 2015-04-12 14:06:06 +0300
+I, [2015-04-12T14:06:06.060111 #9673]  INFO -- : Processing by ApplicationController#new as HTML
+I, [2015-04-12T14:06:06.063734 #9673]  INFO -- :   Rendered application/index.html.erb within layouts/application (0.2ms)
+I, [2015-04-12T14:06:06.070001 #9673]  INFO -- : Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+I, [2015-04-12T14:06:06.500738 #9673]  INFO -- : Started GET "/validations" for 127.0.0.1 at 2015-04-12 14:06:06 +0300
+I, [2015-04-12T14:06:06.504362 #9673]  INFO -- : Processing by ValidationsController#index as JSON
+I, [2015-04-12T14:06:06.527724 #9673]  INFO -- : Completed 200 OK in 23ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+I, [2015-04-12T14:06:19.795021 #9673]  INFO -- : Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-12 14:06:19 +0300
+I, [2015-04-12T14:06:19.810113 #9673]  INFO -- : Processing by SessionsController#create as JSON
+I, [2015-04-12T14:06:19.810350 #9673]  INFO -- :   Parameters: {"name"=>"admin", "password"=>"[FILTERED]", "session"=>{"name"=>"admin", "password"=>"[FILTERED]"}}
+I, [2015-04-12T14:06:20.022293 #9673]  INFO -- : Completed 200 OK in 212ms (Views: 0.7ms | ActiveRecord: 5.2ms)
+I, [2015-04-12T14:06:20.044946 #9673]  INFO -- : Started GET "/users/1" for 127.0.0.1 at 2015-04-12 14:06:20 +0300
+I, [2015-04-12T14:06:20.051664 #9673]  INFO -- : Processing by UsersController#show as JSON
+I, [2015-04-12T14:06:20.051917 #9673]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2015-04-12T14:06:20.159051 #9673]  INFO -- : Completed 200 OK in 107ms (Views: 1.9ms | ActiveRecord: 2.9ms)
+I, [2015-04-12T14:06:23.541274 #9673]  INFO -- : Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-04-12 14:06:23 +0300
+I, [2015-04-12T14:06:23.545965 #9673]  INFO -- : Processing by SessionsController#destroy as JSON
+I, [2015-04-12T14:06:23.559695 #9673]  INFO -- :   Rendered text template (0.1ms)
+I, [2015-04-12T14:06:23.560567 #9673]  INFO -- : Completed 200 OK in 14ms (Views: 1.9ms | ActiveRecord: 0.8ms)
+I, [2015-04-12T14:06:35.841655 #9673]  INFO -- : Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-12 14:06:35 +0300
+I, [2015-04-12T14:06:35.848832 #9673]  INFO -- : Processing by SessionsController#create as JSON
+I, [2015-04-12T14:06:35.849080 #9673]  INFO -- :   Parameters: {"name"=>"admin", "password"=>"[FILTERED]", "session"=>{"name"=>"admin", "password"=>"[FILTERED]"}}
+I, [2015-04-12T14:06:36.004803 #9673]  INFO -- : Completed 200 OK in 155ms (Views: 0.6ms | ActiveRecord: 1.0ms)
+I, [2015-04-12T14:06:36.027665 #9673]  INFO -- : Started GET "/users/1" for 127.0.0.1 at 2015-04-12 14:06:36 +0300
+I, [2015-04-12T14:06:36.031166 #9673]  INFO -- : Processing by UsersController#show as JSON
+I, [2015-04-12T14:06:36.031372 #9673]  INFO -- :   Parameters: {"id"=>"1"}
+I, [2015-04-12T14:06:36.062236 #9673]  INFO -- : Completed 200 OK in 31ms (Views: 1.8ms | ActiveRecord: 1.5ms)
+I, [2015-04-12T14:06:49.778530 #9673]  INFO -- : Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-04-12 14:06:49 +0300
+I, [2015-04-12T14:06:49.783583 #9673]  INFO -- : Processing by SessionsController#destroy as JSON
+I, [2015-04-12T14:06:49.796212 #9673]  INFO -- :   Rendered text template (0.1ms)
+I, [2015-04-12T14:06:49.797112 #9673]  INFO -- : Completed 200 OK in 13ms (Views: 1.3ms | ActiveRecord: 0.7ms)
