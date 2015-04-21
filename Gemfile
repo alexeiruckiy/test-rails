@@ -52,3 +52,8 @@ gem 'cancancan', '~> 1.9.2'
 gem 'letter_opener', :group => :development
 gem 'letter_opener_web', '~> 1.2.0', :group => :development
 
+group :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+end
+

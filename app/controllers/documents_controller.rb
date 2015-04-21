@@ -10,7 +10,8 @@ class DocumentsController < ApplicationController
   end
 
   def create
-    render json: @document.tap{|document| document.save!}, only: [:id]
+    DocumentBuilder.new(@document).create_blank!
+    render json: @document, only: [:id], status: :created
   end
 
   def update

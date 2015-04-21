@@ -56,7 +56,6 @@
       @ui.form_control.each ->
         name = @getAttribute('name')
         unless _.isUndefined(model.attributes[name])
-          bindings['input[name=' + name + ']'] = 'value:' + name + ',events:["keyup"]'
-          bindings['textarea[name=' + name + ']'] = 'value:' + name + ',events:["keyup"]'
+          bindings['[name=' + name + ']'] = 'value:' + name + ',events:["keyup"]'
 
   _.extend(Views.Base.prototype, EpoxyMixin)

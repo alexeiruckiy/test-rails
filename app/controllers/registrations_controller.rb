@@ -17,7 +17,7 @@ class RegistrationsController < Devise::RegistrationsController
       else
         expire_session_data_after_sign_in!
       end
-      render  json: {}, status: 200
+      render  json: {}, status: :created
     else
       clean_up_passwords resource
       render :status => 401, :json => {:errors => resource.errors}

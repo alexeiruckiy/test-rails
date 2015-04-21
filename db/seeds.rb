@@ -6,10 +6,13 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 user_entity = Entity.create(name: 'user')
+document_entity = Entity.create(name: 'document')
 
-Validation.create(field: 'email', rule: '^[\w\.+-]+@([\w]+\.)+[a-zA-Z]+$', message: 'invalid', entity: user_entity)
-Validation.create(field: 'email', rule: '\S+', message: 'can\'t be blank', entity: user_entity)
-Validation.create(field: 'name', rule: '\S+', message: 'can\'t be blank', entity: user_entity)
+Validation.create([{field: 'email', rule: '^[\w\.+-]+@([\w]+\.)+[a-zA-Z]+$', message: 'invalid', entity: user_entity},
+                   {field: 'email', rule: '\S+', message: 'can\'t be blank', entity: user_entity},
+                   {field: 'name', rule: '\S+', message: 'can\'t be blank', entity: user_entity},
+                   {field: 'name', rule: '\S+', message: 'can\'t be blank', entity: document_entity}])
+
 
 admin_role = Role.create(name: 'admin')
 user_role = Role.create(name: 'user')
