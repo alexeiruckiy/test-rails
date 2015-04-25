@@ -15,7 +15,9 @@ describe Document, :type => :model do
     expect{blank_document}.not_to raise_error
   end
 
-  it 'blank document should has one page' do
-    expect(blank_document.pages.count).to eq(1)
+  it 'should correctly assign page number of a new blank document' do
+    pages = blank_document.pages
+    expect(pages.count).to eq(1)
+    expect(pages[0].number).to eq(1)
   end
 end

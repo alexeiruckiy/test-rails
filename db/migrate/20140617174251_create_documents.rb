@@ -4,7 +4,7 @@ class CreateDocuments < ActiveRecord::Migration
       t.string :name, null: false
       t.string :description
       t.references :user, index: true
-      t.integer :pages_count
+      t.integer :pages_count, null:false, default: 0
       t.timestamps
     end
   end

@@ -8,8 +8,7 @@ describe User, :type => :model do
   end
 
   it 'should be assigned to User entity' do
-    user = User.new
-    expect(user.entity).to eq(Entity.find_by_name('user'))
+    expect(User.new.entity).to eq(Entity.find_by_name('user'))
   end
 
 end

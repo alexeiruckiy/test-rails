@@ -14,10 +14,10 @@
 ActiveRecord::Schema.define(version: 20150421174224) do
 
   create_table "documents", force: true do |t|
-    t.string   "name",        null: false
+    t.string   "name",                    null: false
     t.string   "description"
     t.integer  "user_id"
-    t.integer  "pages_count"
+    t.integer  "pages_count", default: 0, null: false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "entity_id"

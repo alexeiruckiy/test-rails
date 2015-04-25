@@ -7,12 +7,8 @@ class User < ActiveRecord::Base
 
   devise :database_authenticatable, :registerable, :confirmable, :timeoutable, :timeout_in => 30.minutes
 
-
-
   validates :name, presence: true, uniqueness: true
   validates :email, presence: true, uniqueness: true
-
-
 
   def is?(search_name)
     if new_record?

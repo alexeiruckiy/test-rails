@@ -6,9 +6,9 @@ class DocumentBuilder
   end
 
   def create_blank!
-    ActiveRecord::Base.transaction do
+    document.class.transaction do
       document.save!
-      Page.create!(document: document)
+      document.pages.create!(number: document.pages_count + 1)
     end
     document
   end
