@@ -22,11 +22,16 @@
 //= require_tree ./backbone/config
 //= require backbone/app
 //= require_tree ./backbone/common
+//= require_tree ./backbone/models
+//= require_tree ./backbone/collections
 //= require_tree ./backbone/controllers
 //= require_tree ./backbone/views
 //= require_tree ./backbone
+//= require websocket_rails/main
+
 
 $(document).ready(function(){
     ExpertSystem.start();
 });
+
 

@@ -49,11 +49,16 @@ gem 'jquery-cookie-rails'
 
 gem 'cancancan', '~> 1.9.2'
 
-gem 'letter_opener', :group => :development
-gem 'letter_opener_web', '~> 1.2.0', :group => :development
+group :development do
+  gem 'letter_opener'
+  gem 'letter_opener_web', '~> 1.2.0'
+end
 
 group :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
 end
 
+gem 'active_model_serializers'
+
+gem 'websocket-rails'

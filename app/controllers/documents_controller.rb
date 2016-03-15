@@ -2,25 +2,22 @@ class DocumentsController < ApplicationController
   load_and_authorize_resource
 
   def index
-    render json: @documents, except: [:updated_at]
+    render json: @documents, root: false
   end
 
   def show
-    render json: @document, except: [:updated_at]
+    render json: @document
   end
 
   def create
     DocumentBuilder.new(@document).create_blank!
-    render json: @document, only: [:id], status: :created
+    render json: @document, status: :created
   end
 
   def update
     @document.update!(document_params)
-    render json: {}
-  end
-
-  def count
-
+    WebsocketRails[:document].trigger 'change', @document
+    render json: {}, status: :ok
   end
 
   private

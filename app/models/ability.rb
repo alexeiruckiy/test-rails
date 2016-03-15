@@ -33,6 +33,7 @@ class Ability
 
     can [:index, :show, :count], Document
     can [:index, :show], Page
+    can :subscribe_document, WebsocketRails::Channel
 
     unless user.is?('guest')
       can :read, User, id: user.id

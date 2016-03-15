@@ -26,7 +26,7 @@ Rails.application.routes.draw do
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
   end
 
-  match '*path' => 'application#new', via: :get
+  match '*path' => 'application#new' ,via: :get, constraints: lambda { |request| !request.path.start_with?('/websocket') }
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

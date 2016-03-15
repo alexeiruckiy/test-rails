@@ -1,7 +1,8 @@
 @ExpertSystem.module 'MainApp', (MainApp, App, Backbone, Marionette, $, _) ->
   class MainApp.EditPresentationController extends App.Controllers.Base
     initialize: (options = {})->
-      @document = options.document
+      { @document } = options
+      @register(@document)
       @view = new MainApp.EditPresentationView(model: @document)
       $.when(@document.fetch()).done =>
         $.when(@document.fetchPages()).done => @onDocumentPagesFetch()
@@ -18,7 +19,7 @@
       @view.infoRegion.show(infoView)
 
     onDocumentPagesFetch: ->
-      new App.MainApp.PagesController(document: @document, region: @view.pagesManageRegion, editState: true)
+      new MainApp.PagesController(document: @document, region: @view.pagesManageRegion, editState: true)
 
     onDocumentChange: ->
       clearTimeout(@_documentTimeout) if @_documentTimeout

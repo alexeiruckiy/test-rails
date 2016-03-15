@@ -1,12 +1,12 @@
-@ExpertSystem.module 'Models.User', (User, App, Backbone, Marionette, $, _) ->
-  class User.Model extends Backbone.Model
+@ExpertSystem.module 'Models', (Models, App, Backbone, Marionette, $, _) ->
+  class Models.User extends Backbone.Model
     defaults:
       name: ''
       email: ''
       password: ''
       password_confirmation: ''
     urlRoot: ->
-      _.result(@collection, 'url') || _.result(User.Collection::, 'url')
+      _.result(@collection, 'url') || _.result(App.Collections.Users::, 'url')
 
     validate: (attrs, options)->
       errors = []
@@ -45,33 +45,3 @@
 
     canEdit: (document)->
       document.isNew() || @id == document.get('user_id')
-
-
-  class User.Collection extends Backbone.Collection
-    url: '/users'
-    models: User.Model
-
-
-  App.reqres.setHandler 'viewer', ->
-    unless @viewer
-      @viewer = new User.Model(id: parseInt($.cookie('user_id')))
-      @viewer.on('user:login:success', -> @fetch())
-    @viewer
-
-  App.reqres.setHandler 'viewer:set', (user)->
-    viewer = App.request('viewer')
-    viewer.clear(silent:true).set(user.attributes)
-    viewer
-
-  App.reqres.setHandler 'users', ->
-    users = new User.Collection
-    users.fetch(reset: true)
-    users
-
-  App.reqres.setHandler 'user', (id) ->
-    if id
-      user = new User.Model(id: id)
-      user.fetch()
-    else
-      user = new User.Model
-    user

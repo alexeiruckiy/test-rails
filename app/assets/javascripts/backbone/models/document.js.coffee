@@ -1,12 +1,14 @@
-@ExpertSystem.module 'Models.Document', (Document, App, Backbone, Marionette, $, _) ->
-  class Document.Model extends Backbone.Model
+@ExpertSystem.module 'Models', (Models, App, Backbone, Marionette, $, _) ->
+  class Models.Document extends Backbone.Model
     defaults:
       name: ''
       description: ''
+
     urlRoot: ->
-      _.result(@collection, 'url') || _.result(Document.Collection::, 'url')
+      _.result(@collection, 'url') || _.result(App.Collections.Documents::, 'url')
+
     initialize: (options = {})->
-      @pages = options.pages || new Document.Pages([], document: @)
+      @pages = options.pages || new App.Collections.Pages([], document: @)
 
     addNewPage: (attrs = {})->
       attrs.document_id = @id
@@ -34,40 +36,3 @@
       else
         @save.apply(@, arguments)
         @pages.saveAll()
-
-  class Document.Collection extends Backbone.Collection
-    url: '/documents'
-    models: Document.Model
-
-  class Document.Page extends Backbone.Model
-    urlRoot: ->
-      _.result(@collection, 'url') || _.result(Document.Collection::, 'url')
-
-    savePage: ->
-      unless @collection.document.isNew()
-        @set({document_id: @collection.document.id}, {silent: true})
-        @save.apply(@, arguments)
-
-  class Document.Pages extends Backbone.Collection
-    model: Document.Page
-    url: '/pages'
-    initialize: (models, options = {})->
-      @document = options.document
-
-    saveAll: ->
-      @each (page)->
-        page.savePage()
-
-  App.reqres.setHandler 'documents', ->
-    new Document.Collection()
-
-  App.reqres.setHandler 'document', (id) ->
-    new Document.Model(if id then {id: id} else {})
-
-  App.reqres.setHandler 'document:page', (document)->
-    page = new Document.Page()
-    document.pages.add(page)
-    page
-
-  App.reqres.setHandler 'page', ->
-    new Document.Page()

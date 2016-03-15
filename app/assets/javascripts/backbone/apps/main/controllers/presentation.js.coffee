@@ -4,6 +4,8 @@
     initialize: (options = {})->
       { document } = options
 
+      @register(document)
+
       view = new MainApp.PresentationView(model: document)
 
       $.when(document.fetch()).done =>
